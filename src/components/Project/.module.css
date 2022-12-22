@@ -1,0 +1,101 @@
+.project {
+  height: 60vh;
+  width: 45vh;
+  border-radius: 2vh;
+  box-shadow: var(--SHADOW);
+}
+/* .project:active {
+  opacity: 0.75;
+}
+.project:hover {
+  cursor: pointer;
+} */
+
+.project .topPane {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ACCENT-COLOR);
+  padding: 1.5vh;
+  border-radius: 1vh 1vh 0 0;
+}
+.topPane .image {
+  width: 30vh;
+  height: 30vh;
+  object-fit: contain;
+}
+
+.project .bodyPane {
+  flex: 1;
+  background-color: var(--BG-COLOR3);
+  padding: 2.5vh;
+  border-radius: 0 0 2vh 2vh;
+}
+.bodyPane .upperBodyPane {
+  padding: 0.5vh 0;
+  align-items: flex-start;
+  justify-content: center;
+}
+.upperBodyPane .name {
+  color: var(--WHITE);
+  font-family: var(--FONT-REGULAR);
+  font-size: 2vh;
+}
+
+.bodyPane .midBodyPane {
+  height: 15vh;
+  margin: 1vh 0;
+  overflow-y: auto;
+}
+.bodyPane .midBodyPane::-webkit-scrollbar-thumb {
+  background-color: var(--BG-COLOR4);
+}
+.bodyPane .midBodyPane::-webkit-scrollbar-track {
+  background-color: var(--BG-COLOR3);
+}
+.midBodyPane .descriptions {
+  color: var(--WHITE);
+  font-size: 1.25vh;
+  font-weight: 700;
+  letter-spacing: 0.1vh;
+  line-height: 2.25vh;
+}
+
+.bodyPane .lowerBodyPane {
+  max-height: 10vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.25vh;
+  padding: 0.5vh 0;
+  margin: 0.5vh 0;
+  overflow-y: auto;
+}
+.bodyPane .lowerBodyPane::-webkit-scrollbar-thumb {
+  background-color: var(--BG-COLOR2);
+}
+.bodyPane .lowerBodyPane::-webkit-scrollbar-track {
+  background-color: var(--BG-COLOR3);
+}
+.lowerBodyPane .tag {
+  color: var(--WHITE);
+  font-size: 1.25vh;
+  font-weight: 700;
+  letter-spacing: 0.1vh;
+  line-height: 2vh;
+  padding: 0.75vh 1.25vh;
+  border-radius: 1vh;
+  background-color: var(--BG-COLOR4);
+  box-shadow: var(--SHADOW);
+}
+
+@media screen and (max-width: 1100px) {
+}
+
+@media screen and (max-width: 750px) {
+  .project {
+    height: 60vh;
+    width: 40vh;
+    border-radius: 2vh;
+    box-shadow: var(--SHADOW);
+  }
+}

@@ -1,0 +1,25 @@
+.framework {
+}
+
+.framework .image {
+  width: 6vh;
+  height: 6vh;
+  object-fit: contain;
+}
+
+.framework .experience {
+  font-family: var(--FONT-REGULAR);
+  font-size: 4vw;
+  color: var(--ACCENT-COLOR);
+  position: absolute;
+}
+
+@media screen and (max-width: 1100px) {
+}
+@media screen and (max-width: 750px) {
+  .framework .image {
+    width: 4vh;
+    height: 4vh;
+    object-fit: contain;
+  }
+}

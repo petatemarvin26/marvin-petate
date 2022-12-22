@@ -1,0 +1,50 @@
+name: CI/CD
+
+on:
+  push:
+    branches: ['prod']
+  pull_request:
+    branches: ['prod']
+
+env:
+  # GOOGLE_APPLICATION_CREDENTIALS: ./google-credentials.json
+  FIREBASE_TOKEN: 1//0e71Yt-LubJwOCgYIARAAGA4SNwF-L9IrH-1qTBNLNsYHSzhk7oKhtwyYpzVf3W5PIi6_8lDetsMc_Cg3nww_pf3UQ__C3CA-Gis
+  PERSONAL_TOKEN: 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
+
+jobs:
+  BUILD_DEPLOY:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: INSTALL TOOLS
+        run: |
+          sudo apt install nodejs
+          curl -sL https://firebase.tools | upgrade=true bash
+
+      - name: BUILD
+        run: |
+          npm install 
+          npm run build:prod
+
+      - name: FIREBASE DEPLOY
+        run: |
+          firebase deploy --token $FIREBASE_TOKEN
+
+      - name: GITHUB DEPLOY
+        run: |
+          cd ./build
+          git init -b main
+          git config --local user.name 'Marvin'
+          git config --local user.email 'petcatemarvin26@gmail.com'
+          git remote add origin https://petatemarvin26:$PERSONAL_TOKEN@github.com/petatemarvin26/petatemarvin26.github.io.git
+          git add .
+          git commit -m "Deployment"
+          git push origin main -f
+
+      # gcloud auth login --cred-file=./google-credential.json
+      # sh deploy.sh
+      # NEED AN ACCOUNT IN GOOGLE

@@ -1,0 +1,63 @@
+.navigationBar {
+  flex-direction: row;
+  height: 15vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigationBar .leftPane {
+  flex: 1;
+}
+
+.navigationBar .rightPane {
+  flex: 2;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10vw;
+}
+.rightPane .bModule {
+  font-family: var(--FONT-REGULAR);
+  font-size: 1.5vh;
+  letter-spacing: 0.15vh;
+  padding: 1vh 2vh;
+  color: var(--ACCENT-COLOR);
+}
+
+@media screen and (max-width: 1100px) {
+}
+
+@media screen and (max-width: 750px) {
+  .navigationBar {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navigationBar .bMenuPane {
+    position: absolute;
+    align-items: center;
+    margin-right: 5vh;
+  }
+
+  .bMenuPane .bMenu {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 1vh;
+    background-color: var(--BG-COLOR2);
+    box-shadow: var(--SHADOW);
+  }
+  .bMenuPane .bMenuItemPane {
+    margin-top: 7.5vh;
+    position: absolute;
+    gap: 0.75vh;
+    padding: 1.5vh 0.5vh 0.75vh 0.5vh;
+    border-radius: 1vh;
+    background-color: var(--BG-COLOR2);
+    box-shadow: var(--SHADOW);
+  }
+  .bMenuItemPane .bMenuItem {
+    width: 4.5vh;
+    height: 4.5vh;
+  }
+}

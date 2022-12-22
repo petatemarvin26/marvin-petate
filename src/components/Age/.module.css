@@ -1,0 +1,9 @@
+.age {
+  font-family: var(--FONT-REGULAR);
+  font-size: 5vw;
+  color: var(--WHITE);
+  border-bottom: 0.75vw solid var(--WHITE);
+  position: absolute;
+  left: 7.5vh;
+  top: calc(92.5vh - 5vw);
+}
