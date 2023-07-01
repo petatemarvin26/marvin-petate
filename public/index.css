@@ -55,10 +55,13 @@ body #root {
   --DIRTY-WHITE: #f9f9f9;
   --DIRTIEST-WHITE: #d8d8d8;
 
-  --RED: #b81d1d;
+  --RED: #b30e0e;
 
   --TITLE-COLOR: #1e272e;
   --BG-CONTACT-PAGE: #1e272e;
+
+  --SCROLL-BAR-COLOR: #1e272e;
+  --SCROLL-BAR-BG-COLOR: #7b97ad;
 
   --FONT-SIZE-S: 15px;
 
@@ -73,11 +76,11 @@ body #root {
 }
 
 *::-webkit-scrollbar-track {
-  background-color: var(--DIRTY-WHITE);
+  background-color: var(--SCROLL-BAR-BG-COLOR);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--DIRTIEST-WHITE);
+  background-color: var(--SCROLL-BAR-COLOR);
 }
 
 *::-webkit-scrollbar {
