@@ -3,6 +3,7 @@ import {ReactComponent as AppSvg} from './app.svg';
 import {ReactComponent as AtomSvg} from './atom.svg';
 import {ReactComponent as AwsSvg} from './aws.svg';
 import {ReactComponent as BitbucketSvg} from './bitbucket.svg';
+import {ReactComponent as CloudSvg} from './cloud.svg';
 import {ReactComponent as CssSvg} from './css.svg';
 import {ReactComponent as CustomSvg} from './custom.svg';
 import {ReactComponent as D3Svg} from './d3.svg';
@@ -21,9 +22,11 @@ import {ReactComponent as GraphqlSvg} from './graphql.svg';
 import {ReactComponent as HtmlSvg} from './html.svg';
 import {ReactComponent as JavaSvg} from './java.svg';
 import {ReactComponent as JavascriptSvg} from './javascript.svg';
+import {ReactComponent as LaptopSvg} from './laptop.svg';
 import {ReactComponent as LeftArrow} from './left-arrow.svg';
 import {ReactComponent as LessSvg} from './less.svg';
 import {ReactComponent as MongoSvg} from './mongo.svg';
+import {ReactComponent as MoonSvg} from './moon.svg';
 import {ReactComponent as NginxSvg} from './nginx.svg';
 import {ReactComponent as NodeSvg} from './node.svg';
 import {ReactComponent as MoleculeSvg} from './molecule.svg';
@@ -52,6 +55,7 @@ export {
   AtomSvg,
   AwsSvg,
   BitbucketSvg,
+  CloudSvg,
   CssSvg,
   CustomSvg,
   D3Svg,
@@ -70,9 +74,11 @@ export {
   HtmlSvg,
   JavaSvg,
   JavascriptSvg,
+  LaptopSvg,
   LeftArrow,
   LessSvg,
   MongoSvg,
+  MoonSvg,
   NginxSvg,
   NodeSvg,
   MoleculeSvg,
