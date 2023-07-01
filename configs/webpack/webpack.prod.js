@@ -2,7 +2,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const InterpolateHtmlPlugin = require('interpolate-html-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const {STYLE_REGEX, MAX_SIZE, FILE_REGEX} = require('./constants');
+const {
+  STYLE_REGEX,
+  MAX_SIZE,
+  FILE_REGEX,
+  SVG_REGEX,
+  ICON_REGEX,
+  IMG_REGEX,
+  GIF_REGEX
+} = require('./constants');
 const {assetFilter, resolver, assetOutputPath} = require('./utils');
 
 module.exports = (process_env) => {
@@ -37,6 +45,10 @@ module.exports = (process_env) => {
           }
         ],
         exclude: '/node_modules/'
+      },
+      {
+        test: SVG_REGEX,
+        use: ['@svgr/webpack']
       },
       {
         test: FILE_REGEX,

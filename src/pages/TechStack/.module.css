@@ -4,7 +4,7 @@
 }
 
 .techstack-page .top-pane {
-  flex: 1;
+  flex: 1.25;
   align-items: center;
   justify-content: center;
 }
@@ -16,7 +16,7 @@
 }
 
 .techstack-page .center-pane {
-  flex: 3.5;
+  flex: 3;
   align-items: center;
   justify-content: flex-start;
 }

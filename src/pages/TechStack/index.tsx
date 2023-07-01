@@ -117,7 +117,7 @@ const TechStackPage: React.FC = () => {
 
   return (
     <View
-      id='techstack'
+      id='p-1'
       reference={(_ref) => {
         ref.current = _ref;
       }}

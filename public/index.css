@@ -63,6 +63,9 @@ body #root {
   --SCROLL-BAR-COLOR: #1e272e;
   --SCROLL-BAR-BG-COLOR: #7b97ad;
 
+  --NAVBAR-BORDER-COLOR: #1e272e;
+  --NAVBAR-BG-COLOR: #1e272e;
+
   --FONT-SIZE-S: 15px;
 
   --BORDER-RADIUS: 4px;

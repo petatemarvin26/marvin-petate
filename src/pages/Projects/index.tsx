@@ -6,7 +6,7 @@ import styles from './.module.css';
 
 const ProjectsPage: React.FC = () => {
   return (
-    <View id='projects' className={styles['projects-page']}>
+    <View id='p-2' className={styles['projects-page']}>
       <View className={styles['top-pane']}>
         <Text className={styles['title-txt']}>PROJECTS</Text>
       </View>

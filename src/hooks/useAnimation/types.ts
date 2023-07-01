@@ -17,6 +17,19 @@ interface UseAnimationStyle {
   width?: string;
   height?: string;
   display?: string;
+  position?:
+    | 'fixed'
+    | '-moz-initial'
+    | 'inherit'
+    | 'initial'
+    | 'revert'
+    | 'revert-layer'
+    | 'unset'
+    | '-webkit-sticky'
+    | 'absolute'
+    | 'relative'
+    | 'static'
+    | 'sticky';
 }
 
 interface UseAnimationNext {
