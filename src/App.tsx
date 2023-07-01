@@ -1,7 +1,14 @@
-import 'App.css';
+import {HomeNavigator} from 'navigators';
+import {useScreen, ScreenType} from 'hooks';
+import {NotSupported} from 'pages';
 
 const App: React.FC = () => {
-  return <div>HELLO WORLD!</div>;
+  const screen = useScreen();
+
+  if (ScreenType.Desktop !== screen) {
+    return <NotSupported />;
+  }
+  return <HomeNavigator />;
 };
 
 export default App;

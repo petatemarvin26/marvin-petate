@@ -1,0 +1,71 @@
+.service {
+  width: 325px;
+  height: 550px;
+  border-radius: var(--BORDER-RADIUS);
+  border: var(--BORDER);
+  box-shadow: var(--SHADOW);
+  background-color: var(--WHITE);
+}
+
+.service .top-pane {
+  flex: 3;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-pane .icon-border-pane {
+  border: var(--BORDER);
+  border-radius: var(--BORDER-RADIUS);
+  padding: 8px 9px;
+  background-color: var(--WHITE);
+}
+
+.top-pane .icon-pane {
+  padding: 5px;
+  border-radius: var(--BORDER-RADIUS);
+  background-image: linear-gradient(30deg, #303952, #596275, #303952);
+}
+
+.icon-pane .icon-svg {
+  font-size: 30px;
+  color: var(--WHITE);
+}
+
+.service .center-pane {
+  flex: 5.5;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.center-pane .title-txt {
+  font-size: 17.5px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--TITLE-COLOR);
+}
+
+.center-pane .content-pane {
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.content-pane .content-txt {
+  font-size: 14px;
+  word-wrap: break-word;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+.service .bottom-pane {
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-pane .readme-btn {
+  width: 200px;
+  height: 30px;
+  border-radius: var(--BORDER-RADIUS);
+  border: var(--BORDER);
+}

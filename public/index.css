@@ -11,18 +11,75 @@ a {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+p {
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  font-size: 15px;
+}
+
 div,
 button {
   display: flex;
   flex-direction: column;
+  border: none;
+  background-color: transparent;
+}
+button:active {
+  opacity: 0.8;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
 }
 
 body #root {
   display: flex;
   flex-direction: column;
+  background-image: url('./bg-design.png');
+  background-size: contain;
 }
 
 :root {
-  --BLACK: #202022;
+  --BG: #ebebeb;
+
+  --BLACK: #000000;
+  --LIGHT-BLACK: #1a1a1a;
+
+  --GRAY: #7c7c7c;
+  --DARK-GRAY: #464646;
+
   --WHITE: #fff;
+  --DIRTY-WHITE: #f9f9f9;
+  --DIRTIEST-WHITE: #d8d8d8;
+
+  --RED: #b81d1d;
+
+  --TITLE-COLOR: #1e272e;
+  --BG-CONTACT-PAGE: #1e272e;
+
+  --FONT-SIZE-S: 15px;
+
+  --BORDER-RADIUS: 4px;
+  --BORDER: 1px solid rgba(0, 0, 0, 0.1);
+  --BORDER-STRONG: 1.5px solid rgba(0, 0, 0, 0.2);
+
+  --SHADOW: 0px 5px 5px 0.5px rgba(0, 0, 0, 0.1);
+
+  --SELECT-SHADOW: 0px 2px 2.5px 0.5px rgba(0, 0, 0, 0.1);
+  --SELECT-SHADOW-OFF: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--DIRTY-WHITE);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--DIRTIEST-WHITE);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
 }
