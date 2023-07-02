@@ -17,7 +17,7 @@ import {
   titleToOut
 } from './animate';
 import {MouseHandler} from './types';
-import servicesData from './test.data';
+import servicesData from './meta.data';
 import styles from './.module.css';
 
 const ServicesPage: React.FC = () => {

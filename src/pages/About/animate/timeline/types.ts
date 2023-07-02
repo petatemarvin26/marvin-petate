@@ -1,5 +1,6 @@
-interface Panels {
+interface Timeline {
   Controller: React.ElementType;
+  data: string[];
 }
 
-export type {Panels};
+export type {Timeline};

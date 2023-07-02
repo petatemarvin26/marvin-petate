@@ -11,9 +11,9 @@ const useScroll: UseScroll = () => {
 
       setPercent(Math.floor(scrollPercent * 100));
     };
-    window.addEventListener('wheel', handleWheelEvent);
+    window.addEventListener('scroll', handleWheelEvent);
     return () => {
-      window.addEventListener('wheel', handleWheelEvent);
+      window.addEventListener('scroll', handleWheelEvent);
     };
   };
   useEffect(scrollListener, []);

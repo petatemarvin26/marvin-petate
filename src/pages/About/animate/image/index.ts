@@ -72,8 +72,6 @@ const imageToPrev: UseAnimationThunkFnProps = () => () => {
 
 const imageElements: Array<Panels> = [
   {Controller: AnimatedImage, src: displayPic2},
-  {Controller: AnimatedImage, src: displayPicStudent},
-  {Controller: AnimatedImage, src: displayPic2},
   {Controller: AnimatedImage, src: displayPicStudent}
 ];
 

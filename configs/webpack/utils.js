@@ -35,7 +35,7 @@ const assetOutputPath = (url, resource) => {
     return `static/media/svg/${url}`;
   }
   if (isImage(resource)) {
-    return `static/media/image/${url}`;
+    return `static/media/img/${url}`;
   }
   if (isIcon(resource)) {
     return `static/media/ico/${url}`;

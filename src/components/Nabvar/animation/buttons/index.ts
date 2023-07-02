@@ -16,7 +16,8 @@ const buttonsFrom: UseAnimationFnProps = () => ({
 const buttonsToIn: UseAnimationThunkFnProps = (key) => (idx) => {
   if (key === idx) {
     return {
-      to: {opacity: 1, width: '60px'}
+      to: {opacity: 1, width: '60px'},
+      delay: 150
     };
   }
   return {

@@ -4,6 +4,7 @@ import {UseAnimationFnProps, UseAnimationThunkFnProps} from 'hooks';
 import {AnimatedText} from 'components';
 
 import {Panels} from './types';
+import {contents} from 'pages/About';
 
 const config: SpringConfig = {duration: 500};
 
@@ -48,7 +49,7 @@ const contentElements: Array<Panels> = [
 ];
 
 const contentAnim: [number, UseAnimationFnProps] = [
-  contentElements.length,
+  contents.length,
   contentFrom
 ];
 

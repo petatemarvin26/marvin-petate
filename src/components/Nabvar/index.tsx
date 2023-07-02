@@ -1,6 +1,6 @@
 import {View, Image, Button} from 'vin-react';
 
-import {logo} from 'assets';
+import {logoBlack} from 'assets';
 import {useAnimation} from 'hooks';
 
 import {ClickHandler, Props} from './types';
@@ -50,7 +50,7 @@ const Navbar: React.FC<Props> = ({className, style, scroll}) => {
   return (
     <View className={`${styles['nav-bar']} ${className}`} style={style}>
       <View className={styles['left-pane']}>
-        <Image className={styles['logo-img']} src={logo} />
+        <Image className={styles['logo-img']} src={logoBlack} />
       </View>
       <View className={styles['right-pane']}>{renderedButtons}</View>
     </View>

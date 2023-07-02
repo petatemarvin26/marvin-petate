@@ -17,6 +17,7 @@ import {ReactComponent as GitSvg} from './git.svg';
 import {ReactComponent as GithubSvg} from './github.svg';
 import {ReactComponent as GitlabSvg} from './gitlab.svg';
 import {ReactComponent as Gitlab2Svg} from './gitlab2.svg';
+import {ReactComponent as GmailSvg} from './gmail.svg';
 import {ReactComponent as GoogleCloudSvg} from './google_cloud.svg';
 import {ReactComponent as GraphqlSvg} from './graphql.svg';
 import {ReactComponent as HtmlSvg} from './html.svg';
@@ -25,6 +26,7 @@ import {ReactComponent as JavascriptSvg} from './javascript.svg';
 import {ReactComponent as LaptopSvg} from './laptop.svg';
 import {ReactComponent as LeftArrow} from './left-arrow.svg';
 import {ReactComponent as LessSvg} from './less.svg';
+import {ReactComponent as LinkedIn} from './linkedin.svg';
 import {ReactComponent as MongoSvg} from './mongo.svg';
 import {ReactComponent as MoonSvg} from './moon.svg';
 import {ReactComponent as NginxSvg} from './nginx.svg';
@@ -44,6 +46,7 @@ import {ReactComponent as RocketSvg} from './rocket.svg';
 import {ReactComponent as ScssSvg} from './scss.svg';
 import {ReactComponent as SocketSvg} from './socket-io.svg';
 import {ReactComponent as StackoverflowSvg} from './stackoverflow.svg';
+import {ReactComponent as TwitterSvg} from './twitter.svg';
 import {ReactComponent as TypescriptSvg} from './typescript.svg';
 import {ReactComponent as VueSvg} from './vue.svg';
 import {ReactComponent as WebpackSvg} from './webpack.svg';
@@ -69,6 +72,7 @@ export {
   GithubSvg,
   GitlabSvg,
   Gitlab2Svg,
+  GmailSvg,
   GoogleCloudSvg,
   GraphqlSvg,
   HtmlSvg,
@@ -77,6 +81,7 @@ export {
   LaptopSvg,
   LeftArrow,
   LessSvg,
+  LinkedIn,
   MongoSvg,
   MoonSvg,
   NginxSvg,
@@ -96,6 +101,7 @@ export {
   ScssSvg,
   SocketSvg,
   StackoverflowSvg,
+  TwitterSvg,
   TypescriptSvg,
   VueSvg,
   WebpackSvg,

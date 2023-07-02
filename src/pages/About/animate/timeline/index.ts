@@ -1,7 +1,7 @@
 import {UseAnimationFnConfig, UseAnimationFnProps} from 'hooks';
 import {AnimatedView} from 'components';
 
-import {Panels} from './types';
+import {Timeline} from './types';
 
 const config: UseAnimationFnConfig = (idx) => ({
   duration: (timelineElements.length - idx) * 250
@@ -18,7 +18,9 @@ const timelineToOut: UseAnimationFnProps = () => ({
   to: {opacity: 0, y: '-70px'}
 });
 
-const timelineElements: Array<Panels> = [{Controller: AnimatedView}];
+const timelineElements: Array<Timeline> = [
+  {Controller: AnimatedView, data: []}
+];
 
 const timelineAnim: [number, UseAnimationFnProps] = [
   timelineElements.length,

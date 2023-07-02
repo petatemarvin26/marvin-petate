@@ -4,6 +4,7 @@ import {Text, View} from 'vin-react';
 import {useAnimation, useFocus} from 'hooks';
 import {Timeline} from 'components';
 
+import contents from './meta.data';
 import {
   titleElements,
   titleAnim,
@@ -101,4 +102,5 @@ const AboutPage: React.FC = () => {
   );
 };
 
+export {contents};
 export default AboutPage;
