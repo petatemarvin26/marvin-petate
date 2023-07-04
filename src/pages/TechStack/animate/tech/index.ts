@@ -8,33 +8,54 @@ import {easings} from '@react-spring/web';
 const selectConfig = {duration: 150, easing: easings.easeInOutBack};
 
 const techFrom: UseAnimationFnProps = () => ({
-  from: {y: '0px', opacity: 0, width: '0px', height: '0px'},
+  from: {
+    y: '0px',
+    opacity: 0,
+    width: '0px',
+    height: '0px',
+    filter: 'grayscale(0%)'
+  },
   config: selectConfig
 });
 
 const techToIn: UseAnimationFnProps = (idx) => ({
-  to: {opacity: 1, width: '40px', height: '40px'},
+  to: {opacity: 1, width: '40px', height: '40px', filter: 'grayscale(0%)'},
   config: {duration: (idx + 1) * 25 + 150}
 });
 const techToOut: UseAnimationFnProps = (idx) => ({
-  to: {opacity: 0, width: '0px', height: '0px'},
+  to: {opacity: 0, width: '0px', height: '0px', filter: 'grayscale(0%)'},
   config: {duration: (techElements.length - (idx + 1)) * 25 + 150}
 });
 
 const techSelectIn: UseAnimationThunkFnProps = (techId) => (idx) => {
   if (techId === idx) {
     return {
-      to: {y: '-15px', boxShadow: 'var(--SELECT-SHADOW)', opacity: 1},
+      to: {
+        y: '-15px',
+        boxShadow: 'var(--SELECT-SHADOW)',
+        opacity: 1,
+        filter: 'grayscale(0%)'
+      },
       config: selectConfig
     };
   }
   return {
-    to: {y: '0px', boxShadow: 'var(--SELECT-SHADOW-OFF)', opacity: 0.25},
+    to: {
+      y: '0px',
+      boxShadow: 'var(--SELECT-SHADOW-OFF)',
+      opacity: 0.25,
+      filter: 'grayscale(100%)'
+    },
     config: selectConfig
   };
 };
 const techSelectOut: UseAnimationFnProps = () => ({
-  to: {y: '0px', boxShadow: 'var(--SELECT-SHADOW-OFF)', opacity: 1},
+  to: {
+    y: '0px',
+    boxShadow: 'var(--SELECT-SHADOW-OFF)',
+    opacity: 1,
+    filter: 'grayscale(0%)'
+  },
   config: selectConfig
 });
 

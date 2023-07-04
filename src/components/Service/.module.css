@@ -35,7 +35,7 @@
   flex: 5.5;
   align-items: center;
   justify-content: flex-start;
-  gap: 25px;
+  gap: 20px;
 }
 
 .center-pane .title-txt {
@@ -47,10 +47,20 @@
 
 .center-pane .content-pane {
   width: 70%;
+  height: 250px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
+  overflow-y: auto;
 }
+.center-pane .content-pane::-webkit-scrollbar-thumb {
+}
+.center-pane .content-pane::-webkit-scrollbar-track {
+}
+.center-pane .content-pane::-webkit-scrollbar {
+  width: 0px;
+}
+
 .content-pane .content-txt {
   font-size: 14px;
   word-wrap: break-word;

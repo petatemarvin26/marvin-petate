@@ -5,19 +5,19 @@ const services = [
     Icon: CustomSvg,
     title: 'Customize System',
     content:
-      'Donec ultricies sodales felis. Mauris orci nulla, vulputate quis felis quis, porttitor rutrum elit. Maecenas ac rhoncus urna. Phasellus interdum sit amet arcu ut porta. Nam arcu diam, dignissim ut sem non, commodo condimentum nibh. Donec a aliquam erat. Mauris tortor ligula, ullamcorper et nunc finibus, congue tincidunt enim. '
+      'There are tons of systems around the world, some of them are not in properly handled or maintained by engineers, poor implementation of codebase leads to poor performance and numerous issues, inaccurate applied architecture that result to become more complex of the system and tightly coupled system one of the great factor why migration/integration in the features are too expensive in time, these are commonly issue to other software development team that has a poor definition in terms of foundation.'
   },
   {
     Icon: AppSvg,
     title: 'Software Development',
     content:
-      'Sed faucibus lectus at mi placerat fermentum sit amet mattis erat. Donec ac ligula vel est dapibus hendrerit. In lacus lorem, malesuada sed nulla non, varius aliquam mi. In hac habitasse platea dictumst.'
+      'I pursue myself to learn more about new up coming technologies that trending on our dev community that give me more knowledge on my specialize field as being frontend developer. It will be a great opportunity to be part of the corporate team, collaborate with colleagues and provide a service for the company.'
   },
   {
     Icon: PeopleSvg,
     title: 'Outsourcing',
     content:
-      'Vestibulum maximus tellus felis, lacinia elementum est luctus ut. Mauris non leo eu eros porta facilisis. Cras non auctor diam. Nulla nec augue sit amet nulla placerat sagittis. Morbi ac leo lobortis, luctus erat id, dictum quam. Curabitur vitae sapien egestas, viverra tellus sit amet, ultricies nulla. Vivamus vel turpis lorem.'
+      'On our entire career we should know how to value and evaluate our colleagues, few steps away from my starting point we already encounter professional developers and engineers that has a lot of potential on their profession and having a circle connection with concrete relationship from them are great opportunity, especially to those people who are greedy to their opportunities.'
   }
 ];
 

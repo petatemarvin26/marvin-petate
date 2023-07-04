@@ -3,6 +3,7 @@ import {ReactComponent as AppSvg} from './app.svg';
 import {ReactComponent as AtomSvg} from './atom.svg';
 import {ReactComponent as AwsSvg} from './aws.svg';
 import {ReactComponent as BitbucketSvg} from './bitbucket.svg';
+import {ReactComponent as CircleCISvg} from './circleci.svg';
 import {ReactComponent as CloudSvg} from './cloud.svg';
 import {ReactComponent as CssSvg} from './css.svg';
 import {ReactComponent as CustomSvg} from './custom.svg';
@@ -58,6 +59,7 @@ export {
   AtomSvg,
   AwsSvg,
   BitbucketSvg,
+  CircleCISvg,
   CloudSvg,
   CssSvg,
   CustomSvg,

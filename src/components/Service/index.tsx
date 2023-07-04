@@ -16,7 +16,9 @@ const Service: React.FC<Props> = ({Icon, title, content}) => {
       <View className={styles['center-pane']}>
         <Text className={styles['title-txt']}>{title}</Text>
         <View className={styles['content-pane']}>
-          <Text className={styles['content-txt']}>{content}</Text>
+          <Text className={styles['content-txt']}>
+            {content.substring(0, 275)}...
+          </Text>
         </View>
       </View>
       <View className={styles['bottom-pane']}>

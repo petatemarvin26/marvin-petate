@@ -37,7 +37,11 @@ const detailsElements: Array<Details> = [
   {
     Controller: AnimatedButton,
     className: 'about-btn',
-    content: 'About Me'
+    content: 'About Me',
+    onClick() {
+      const about = document.querySelector('#about');
+      about.scrollIntoView({behavior: 'smooth'});
+    }
   }
 ];
 

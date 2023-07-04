@@ -23,6 +23,7 @@ import {
   pbRightToOut
 } from './animate';
 import styles from './.module.css';
+import {ClickHandler} from './types';
 
 const FrontPage: React.FC = () => {
   const ref = useRef<HTMLDivElement>();
@@ -34,6 +35,14 @@ const FrontPage: React.FC = () => {
   const detailsFocus = useFocus(() => [ref.current], {threshold: [0.6]});
   const imageFocus = useFocus(() => [ref.current], {threshold: [0.5]});
   const profileBtnFocus = useFocus(() => [ref.current], {threshold: [0.4]});
+
+  const handleClick: ClickHandler = (key) => () => {
+    let link = 'https://stackoverflow.com/users/10646511/marvin';
+    if (key === 1) link = 'https://www.npmjs.com/~petatemarvin26';
+    if (key === 2) link = 'https://github.com/petatemarvin26';
+    if (key === 3) link = 'https://gitlab.com/petatemarvin26';
+    window.open(link, '_blank');
+  };
 
   const detailsFocusListener = () => {
     if (detailsFocus) {
@@ -63,9 +72,14 @@ const FrontPage: React.FC = () => {
   useEffect(profileBtnListener, [profileBtnFocus]);
 
   const renderedDetails = detailsStyles.map((style, key) => {
-    const {Controller, className, content} = detailsElements[key];
+    const {Controller, className, content, onClick} = detailsElements[key];
     return (
-      <Controller key={key} style={style} className={styles[className]}>
+      <Controller
+        key={key}
+        style={style}
+        className={styles[className]}
+        onClick={onClick}
+      >
         {content}
       </Controller>
     );
@@ -86,7 +100,7 @@ const FrontPage: React.FC = () => {
   const renderedLeftProfileButtons = pbLeftStyles.map((style, key) => {
     const {Controller, Icon} = pbLeftElements[key];
     return (
-      <Controller key={key} style={style}>
+      <Controller key={key} style={style} onClick={handleClick(key)}>
         <Icon className={styles['svg']} />
       </Controller>
     );
@@ -95,7 +109,7 @@ const FrontPage: React.FC = () => {
   const renderedRightProfileButtons = pbRightStyles.map((style, key) => {
     const {Controller, Icon} = pbRightElements[key];
     return (
-      <Controller key={key} style={style}>
+      <Controller key={key} style={style} onClick={handleClick(key + 2)}>
         <Icon className={styles['svg']} />
       </Controller>
     );

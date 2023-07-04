@@ -3,5 +3,13 @@ import displayPic2 from './dp2.png';
 import displayPicStudent from './dp-student.png';
 import logoBlack from './logo-black.png';
 import logo from './logo.png';
+import engrNelvin from './engr.nelvin.png';
 
-export {displayPic, displayPic2, displayPicStudent, logoBlack, logo};
+export {
+  displayPic,
+  displayPic2,
+  displayPicStudent,
+  logoBlack,
+  logo,
+  engrNelvin
+};
