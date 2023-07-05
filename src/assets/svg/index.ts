@@ -2,6 +2,7 @@ import {ReactComponent as AndroidSvg} from './android.svg';
 import {ReactComponent as AppSvg} from './app.svg';
 import {ReactComponent as AtomSvg} from './atom.svg';
 import {ReactComponent as AwsSvg} from './aws.svg';
+import {ReactComponent as BabelSvg} from './babel.svg';
 import {ReactComponent as BitbucketSvg} from './bitbucket.svg';
 import {ReactComponent as CircleCISvg} from './circleci.svg';
 import {ReactComponent as CloudSvg} from './cloud.svg';
@@ -58,6 +59,7 @@ export {
   AppSvg,
   AtomSvg,
   AwsSvg,
+  BabelSvg,
   BitbucketSvg,
   CircleCISvg,
   CloudSvg,

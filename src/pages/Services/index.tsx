@@ -33,7 +33,7 @@ const ServicesPage: React.FC = () => {
   const handleLeave: MouseHandler = (key) => () => {
     servicesStart(hoverReset(key));
   };
-
+  
   useEffect(() => {
     if (focus) {
       servicesStart(servicesToIn);
@@ -63,7 +63,7 @@ const ServicesPage: React.FC = () => {
         onMouseEnter={handleHover(key)}
         onMouseLeave={handleLeave(key)}
       >
-        <Service {...service} />
+        <Service {...service} focus={focus} />
       </Controller>
     );
   });

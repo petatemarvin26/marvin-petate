@@ -17,7 +17,7 @@ const services = [
     Icon: PeopleSvg,
     title: 'Outsourcing',
     content:
-      'On our entire career we should know how to value and evaluate our colleagues, few steps away from my starting point we already encounter professional developers and engineers that has a lot of potential on their profession and having a circle connection with concrete relationship from them are great opportunity, especially to those people who are greedy to their opportunities.'
+      'On our entire career we know how to value and evaluate our colleagues, few steps away from my starting point we already encounter professional developers and engineers that has a lot of potential on their profession and having a circle connection with concrete relationship from them are great opportunity, especially to those people who are greedy to their opportunities.'
   }
 ];
 
