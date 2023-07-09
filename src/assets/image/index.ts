@@ -1,8 +1,11 @@
 import broowingCoffeeImg from './broowing-coffee.jpg';
 import budgetMangrImg from './budget-manager.jpg';
 import displayPicImg from './dp.png';
+import displayPicLowImg from './dp-low.png';
 import displayPic2Img from './dp2.png';
+import displayPic2LowImg from './dp2-low.png';
 import displayPic3Img from './dp3.png';
+import displayPic3LowImg from './dp3.png';
 import engrNelvinLogoImg from './engr.nelvin-logo.png';
 import letsTalkImg from './lets-talk.jpg';
 import mvLogoBlack from './mv-logo-black.png';
@@ -15,8 +18,11 @@ import rpsImg from './rps.jpg';
 export {
   broowingCoffeeImg,
   budgetMangrImg,
-  displayPic2Img,
+  displayPic3LowImg,
   displayPic3Img,
+  displayPic2LowImg,
+  displayPic2Img,
+  displayPicLowImg,
   displayPicImg,
   engrNelvinLogoImg,
   letsTalkImg,

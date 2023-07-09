@@ -1,7 +1,7 @@
-import {useEffect, useRef} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import {View} from 'vin-react';
 
-import {displayPicImg} from 'assets/image';
+import {displayPicImg, displayPicLowImg} from 'assets/image';
 import {useAnimation, useFocus} from 'hooks';
 
 import {
@@ -27,6 +27,8 @@ import {ClickHandler} from './types';
 
 const FrontPage: React.FC = () => {
   const ref = useRef<HTMLDivElement>();
+  const [s, setS] = useState<string>(displayPicLowImg);
+
   const [pbLeftStyles, pbLeftStart] = useAnimation(...pbLeftAnim);
   const [pbRightStyles, pbRightStart] = useAnimation(...pbRightAnim);
   const [detailsStyles, detailsStart] = useAnimation(...detailsAnim);
@@ -44,6 +46,11 @@ const FrontPage: React.FC = () => {
     window.open(link, '_blank');
   };
 
+  const preRenderImageListener = () => {
+    const dp = new Image();
+    dp.src = displayPicImg;
+    dp.onload = () => setS(dp.src);
+  };
   const detailsFocusListener = () => {
     if (detailsFocus) {
       detailsStart(detailsToIn);
@@ -67,6 +74,7 @@ const FrontPage: React.FC = () => {
     pbLeftStart(pbLeftToOut);
     pbRightStart(pbRightToOut);
   };
+  useEffect(preRenderImageListener, []);
   useEffect(detailsFocusListener, [detailsFocus]);
   useEffect(imageFocusListener, [imageFocus]);
   useEffect(profileBtnListener, [profileBtnFocus]);
@@ -92,7 +100,7 @@ const FrontPage: React.FC = () => {
         key={key}
         style={style}
         className={styles['display-pic-img']}
-        src={displayPicImg}
+        src={s}
       />
     );
   });
