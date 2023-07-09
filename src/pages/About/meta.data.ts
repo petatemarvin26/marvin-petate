@@ -9,7 +9,7 @@ const contents: Array<Content> = [
   },
   {
     data: [
-      'I am also participating on other dev community libraries issues in Github, Stackoverflow and I publish some libraries in NPM that is pretty helpful for developers and I kept continuing learn javascript library/frameworks, CICD Platform tools for automation of deployment and different architectures, when I faced those technologies and known how devops works in the industry the objective of mine was stepping up, create new objectives and achive milestone, until I understand the concept dev operatons so I decide to create my own team deliver a software as a service, come up with personal freelance projects',
+      'I am also participating on other dev community libraries issues in Github, Stackoverflow and I publish some libraries in NPM that is pretty helpful for developers and I kept continuing learn javascript library/frameworks, CICD Platform tools for automation of deployment and different architectures, that time I faced those technologies and known how devops works in the industry the objective of mine was stepping up, create new objectives and achive milestone, until I understand the concept dev operatons so I decide to create my own team deliver a software as a service, come up with personal freelance projects',
       'Until now, I still focus on other frontend technology, best practices and fundamentals that helps me to grow as frontend developer and software engineer while improving my knowledge at dev operations.'
     ]
   }
