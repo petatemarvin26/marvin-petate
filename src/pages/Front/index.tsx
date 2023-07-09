@@ -51,7 +51,7 @@ const FrontPage: React.FC = () => {
   const preRenderImageListener = () => {
     if (initRender.current) {
       initRender.current = false;
-
+      
       //pre-render of large image
       preRenderImage(displayPicImg).then(setSrc);
     }

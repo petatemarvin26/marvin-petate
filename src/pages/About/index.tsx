@@ -20,13 +20,26 @@ import {
   imageToNext
 } from './animate';
 import styles from './.module.css';
-import {preRenderImage} from 'utils';
-import {displayPic2Img, displayPic3Img} from 'assets';
+import {
+  // preRenderImage,
+  preRenderImages
+} from 'utils';
+import {
+  displayPic2Img,
+  displayPic2LowImg,
+  displayPic3Img,
+  displayPic3LowImg
+} from 'assets';
 
 const AboutPage: React.FC = () => {
   const initRender = useRef(true);
   const ref = useRef<HTMLDivElement>();
-  const [srcs, setSrcs] = useState<Array<string>>([]);
+  // const [src0, setSrc0] = useState<string>();
+  // const [src1, setSrc1] = useState<string>();
+  const [srcs, setSrcs] = useState<Array<string>>([
+    displayPic2LowImg,
+    displayPic3LowImg
+  ]);
 
   const [timelineIndex, setTimelineIndex] = useState(0);
 
@@ -52,13 +65,15 @@ const AboutPage: React.FC = () => {
       initRender.current = false;
 
       //pre-render of large image
-      // preRenderImages([displayPic2Img, displayPic3Img]).then(setSrcs as any);
-      preRenderImage(displayPic2Img).then((src) =>
-        setSrcs((prev) => [src as string, ...prev.slice(1, 2)])
-      );
-      preRenderImage(displayPic3Img).then((src) =>
-        setSrcs((prev) => [...prev.slice(0, 1), src as string])
-      );
+      preRenderImages([displayPic2Img, displayPic3Img]).then((urls) => {
+        setSrcs(urls as Array<string>);
+      });
+      // preRenderImage(displayPic2Img).then((src) =>
+      //   setSrcs((prev) => [src as string, ...prev.slice(1, 2)])
+      // );
+      // preRenderImage(displayPic3Img).then((src) =>
+      //   setSrcs((prev) => [...prev.slice(0, 2), src as string])
+      // );
       return;
     }
     imageStart(imageToNext(timelineIndex));
@@ -67,13 +82,13 @@ const AboutPage: React.FC = () => {
   useEffect(timelineIndexListener, [timelineIndex]);
 
   const renderedImage = imageStyles.map((style, key) => {
-    const {Controller, src} = imageElements[key];
+    const {Controller} = imageElements[key];
     return (
       <Controller
         key={key}
         className={styles['dp-img']}
         style={style}
-        src={srcs[key] || src}
+        src={srcs[key]}
       />
     );
   });
