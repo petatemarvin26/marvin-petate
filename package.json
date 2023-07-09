@@ -1,7 +1,7 @@
 {
-  "name": "react-webpack",
-  "version": "1.1.4",
-  "description": "This is React Application maintain the light weight configuration using Webpack",
+  "name": "marvin-petate",
+  "version": "2.0.0",
+  "description": "This static website contains information of 2022-2023",
   "private": true,
   "scripts": {
     "start": "webpack serve --config configs/webpack/webpack.config.js",
@@ -26,10 +26,10 @@
   "dependencies": {
     "@react-spring/animated": "^9.7.3",
     "@react-spring/web": "^9.7.2",
-    "@types/d3": "^7.4.0",
     "d3": "^7.8.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vin-react": "^0.1.9"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",
@@ -37,6 +37,7 @@
     "@babel/preset-react": "^7.22.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@svgr/webpack": "^6.5.1",
+    "@types/d3": "^7.4.0",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@typescript-eslint/eslint-plugin": "^5.47.0",

@@ -13,6 +13,7 @@ import {
 
 import {navbarAnim, navbarElements, navbarToIn, navbarToOut} from './animation';
 import styles from './.module.css';
+import {Text, View} from 'vin-react';
 
 const HomeNavigator: React.FC = () => {
   const [scroll] = useScroll();
@@ -40,7 +41,7 @@ const HomeNavigator: React.FC = () => {
   });
 
   return (
-    <div className={styles['home-nav']}>
+    <View className={styles['home-nav']}>
       {renderedNavbar}
       {/* <RocketSvg className={styles['rocket']} /> */}
       <FrontPage />
@@ -49,7 +50,8 @@ const HomeNavigator: React.FC = () => {
       <TechStackPage />
       <ProjectsPage />
       <ContactPage />
-    </div>
+      <Text className={styles['version-txt']}>v{process.env.VERSION}</Text>
+    </View>
   );
 };
 

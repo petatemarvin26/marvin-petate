@@ -1,4 +1,12 @@
 .home-nav {
+  position: relative;
+}
+
+.home-nav .version-txt {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  color: var(--VERSION-TXT-COLOR)
 }
 
 .cloud-large {
