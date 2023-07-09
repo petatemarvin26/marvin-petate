@@ -24,10 +24,12 @@ import {
 } from './animate';
 import styles from './.module.css';
 import {ClickHandler} from './types';
+import {preRenderImage} from 'utils';
 
 const FrontPage: React.FC = () => {
+  const initRender = useRef(true);
   const ref = useRef<HTMLDivElement>();
-  const [s, setS] = useState<string>(displayPicLowImg);
+  const [src, setSrc] = useState<string>(displayPicLowImg);
 
   const [pbLeftStyles, pbLeftStart] = useAnimation(...pbLeftAnim);
   const [pbRightStyles, pbRightStart] = useAnimation(...pbRightAnim);
@@ -47,9 +49,10 @@ const FrontPage: React.FC = () => {
   };
 
   const preRenderImageListener = () => {
-    const dp = new Image();
-    dp.src = displayPicImg;
-    dp.onload = () => setS(dp.src);
+    if (initRender.current) {
+      initRender.current = false;
+      preRenderImage(displayPicImg).then(setSrc);
+    }
   };
   const detailsFocusListener = () => {
     if (detailsFocus) {
@@ -100,7 +103,7 @@ const FrontPage: React.FC = () => {
         key={key}
         style={style}
         className={styles['display-pic-img']}
-        src={s}
+        src={src}
       />
     );
   });

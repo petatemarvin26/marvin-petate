@@ -20,10 +20,13 @@ import {
   imageToNext
 } from './animate';
 import styles from './.module.css';
+import {preRenderImages} from 'utils';
+import {displayPic2Img, displayPic3Img} from 'assets';
 
 const AboutPage: React.FC = () => {
   const initRender = useRef(true);
   const ref = useRef<HTMLDivElement>();
+  const [srcs, setSrcs] = useState<Array<string>>([]);
 
   const [timelineIndex, setTimelineIndex] = useState(0);
 
@@ -44,15 +47,17 @@ const AboutPage: React.FC = () => {
     timelineStart(timelineToOut);
     imageStart(imageToOut);
   };
-  useEffect(centerFocusListener, [centerFocus]);
-
   const timelineIndexListener = () => {
     if (initRender.current) {
       initRender.current = false;
+
+      //pre-render of large image
+      preRenderImages([displayPic2Img, displayPic3Img]).then(setSrcs as any);
       return;
     }
     imageStart(imageToNext(timelineIndex));
   };
+  useEffect(centerFocusListener, [centerFocus]);
   useEffect(timelineIndexListener, [timelineIndex]);
 
   const renderedImage = imageStyles.map((style, key) => {
@@ -62,7 +67,7 @@ const AboutPage: React.FC = () => {
         key={key}
         className={styles['dp-img']}
         style={style}
-        src={src}
+        src={srcs[key] || src}
       />
     );
   });

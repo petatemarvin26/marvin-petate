@@ -5,7 +5,7 @@ import displayPicLowImg from './dp-low.png';
 import displayPic2Img from './dp2.png';
 import displayPic2LowImg from './dp2-low.png';
 import displayPic3Img from './dp3.png';
-import displayPic3LowImg from './dp3.png';
+import displayPic3LowImg from './dp3-low.png';
 import engrNelvinLogoImg from './engr.nelvin-logo.png';
 import letsTalkImg from './lets-talk.jpg';
 import mvLogoBlack from './mv-logo-black.png';
