@@ -20,7 +20,7 @@ jobs:
       - name: build
         run: |
           npm ci
-          PUBLIC_URL=${{ vars.PUBLIC_URL }} npm run build
+          export PUBLIC_URL=${{ vars.PUBLIC_URL }} npm run build
 
       - name: deploy
         run: |
