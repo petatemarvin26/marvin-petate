@@ -20,7 +20,7 @@ import {
   imageToNext
 } from './animate';
 import styles from './.module.css';
-import {preRenderImages} from 'utils';
+import {preRenderImage} from 'utils';
 import {displayPic2Img, displayPic3Img} from 'assets';
 
 const AboutPage: React.FC = () => {
@@ -52,7 +52,13 @@ const AboutPage: React.FC = () => {
       initRender.current = false;
 
       //pre-render of large image
-      preRenderImages([displayPic2Img, displayPic3Img]).then(setSrcs as any);
+      // preRenderImages([displayPic2Img, displayPic3Img]).then(setSrcs as any);
+      preRenderImage(displayPic2Img).then((src) =>
+        setSrcs((prev) => [src as string, ...prev.slice(1, 2)])
+      );
+      preRenderImage(displayPic3Img).then((src) =>
+        setSrcs((prev) => [...prev.slice(0, 1), src as string])
+      );
       return;
     }
     imageStart(imageToNext(timelineIndex));
