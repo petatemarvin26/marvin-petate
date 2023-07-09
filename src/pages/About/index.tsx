@@ -20,20 +20,22 @@ import {
   imageToNext
 } from './animate';
 import styles from './.module.css';
-import {preRenderImages} from 'utils';
+// import {preRenderImages} from 'utils';
 import {
   displayPic2Img,
-  displayPic2LowImg,
-  displayPic3Img,
-  displayPic3LowImg
+  // displayPic2LowImg,
+  displayPic3Img
+  // displayPic3LowImg
 } from 'assets';
 
 const AboutPage: React.FC = () => {
   const initRender = useRef(true);
   const ref = useRef<HTMLDivElement>();
   const [srcs, setSrcs] = useState<Array<string>>([
-    displayPic2LowImg,
-    displayPic3LowImg
+    displayPic2Img,
+    displayPic3Img
+    // displayPic2LowImg,
+    // displayPic3LowImg
   ]);
 
   const [timelineIndex, setTimelineIndex] = useState(0);
@@ -59,9 +61,9 @@ const AboutPage: React.FC = () => {
     if (initRender.current) {
       initRender.current = false;
 
-      preRenderImages([displayPic2Img, displayPic3Img]).then((urls) => {
-        setSrcs(urls as Array<string>);
-      });
+      // preRenderImages([displayPic2Img, displayPic3Img]).then((urls) => {
+      //   setSrcs(urls as Array<string>);
+      // });
       return;
     }
     imageStart(imageToNext(timelineIndex));

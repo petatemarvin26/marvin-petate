@@ -24,12 +24,15 @@ import {
 } from './animate';
 import styles from './.module.css';
 import {ClickHandler} from './types';
-import {preRenderImage} from 'utils';
+// import {preRenderImage} from 'utils';
 
 const FrontPage: React.FC = () => {
   const initRender = useRef(true);
   const ref = useRef<HTMLDivElement>();
-  const [src, setSrc] = useState<string>(displayPicLowImg);
+  const [src, setSrc] = useState<string>(
+    // displayPicLowImg
+    displayPicImg
+  );
 
   const [pbLeftStyles, pbLeftStart] = useAnimation(...pbLeftAnim);
   const [pbRightStyles, pbRightStart] = useAnimation(...pbRightAnim);
@@ -51,9 +54,9 @@ const FrontPage: React.FC = () => {
   const preRenderImageListener = () => {
     if (initRender.current) {
       initRender.current = false;
-      
+
       //pre-render of large image
-      preRenderImage(displayPicImg).then(setSrc);
+      // preRenderImage(displayPicImg).then(setSrc)
     }
   };
   const detailsFocusListener = () => {
