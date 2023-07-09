@@ -8,7 +8,8 @@ import {
   ProjectsPage,
   ServicesPage,
   TechStackPage,
-  ContactPage
+  ContactPage,
+  LoadingPage
 } from 'pages';
 
 import {navbarAnim, navbarElements, navbarToIn, navbarToOut} from './animation';
@@ -40,10 +41,11 @@ const HomeNavigator: React.FC = () => {
     );
   });
 
+  return <LoadingPage />;
+
   return (
     <View className={styles['home-nav']}>
       {renderedNavbar}
-      {/* <RocketSvg className={styles['rocket']} /> */}
       <FrontPage />
       <AboutPage />
       <ServicesPage />
