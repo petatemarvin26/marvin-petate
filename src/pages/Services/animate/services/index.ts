@@ -7,7 +7,7 @@ import {
 } from 'hooks';
 import {AnimatedView} from 'components';
 
-import {Panels} from './types';
+import {Items} from './types';
 
 const config: UseAnimationFnConfig = (idx: number) => ({
   duration: (idx + 1) * 100 + 100,
@@ -39,7 +39,7 @@ const hoverReset: UseAnimationThunkFnProps = (key) => (idx) => {
   return {to: {y: '0px'}};
 };
 
-const servicesElements: Array<Panels> = [
+const servicesElements: Array<Items> = [
   {Controller: AnimatedView},
   {Controller: AnimatedView},
   {Controller: AnimatedView}

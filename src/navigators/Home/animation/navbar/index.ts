@@ -1,7 +1,7 @@
 import {UseAnimationFnProps} from 'hooks';
 import {Navbar} from 'components';
 
-import {Panels} from './types';
+import {Items} from './types';
 import {animated} from '@react-spring/web';
 
 const AnimatedNavbar = animated(Navbar);
@@ -17,7 +17,7 @@ const navbarToOut: UseAnimationFnProps = () => ({
   config: {duration: 100}
 });
 
-const navbarElements: Array<Panels> = [{Controller: AnimatedNavbar}];
+const navbarElements: Array<Items> = [{Controller: AnimatedNavbar}];
 
 const navbarAnim: [number, UseAnimationFnProps] = [
   navbarElements.length,

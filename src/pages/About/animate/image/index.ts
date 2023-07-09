@@ -1,7 +1,7 @@
 import {UseAnimationFnProps, UseAnimationThunkFnProps} from 'hooks';
 import {AnimatedImage} from 'components';
 
-import {Panels} from './types';
+import {Items} from './types';
 import {displayPic2LowImg, displayPic3LowImg} from 'assets';
 import {easings} from '@react-spring/web';
 import contents from 'pages/About/meta.data';
@@ -70,9 +70,9 @@ const imageToPrev: UseAnimationThunkFnProps = () => () => {
   };
 };
 
-const imageElements: Array<Panels> = [
-  {Controller: AnimatedImage, src: displayPic2LowImg},
-  {Controller: AnimatedImage, src: displayPic3LowImg}
+const imageElements: Array<Items> = [
+  {Controller: AnimatedImage},
+  {Controller: AnimatedImage}
 ];
 
 const imageAnim: [number, UseAnimationFnProps] = [

@@ -1,5 +1,5 @@
-interface Panels {
+interface Items {
   Controller: React.ElementType;
 }
 
-export type {Panels};
+export type {Items};

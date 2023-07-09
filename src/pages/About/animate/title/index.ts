@@ -1,7 +1,7 @@
 import {UseAnimationFnConfig, UseAnimationFnProps} from 'hooks';
 import {AnimatedView} from 'components';
 
-import {Panels} from './types';
+import {Items} from './types';
 
 const config: UseAnimationFnConfig = (idx) => ({
   duration: (titleElements.length - idx) * 400
@@ -17,7 +17,7 @@ const titleToOut: UseAnimationFnProps = () => ({
   to: {opacity: 0, y: '-70px'}
 });
 
-const titleElements: Array<Panels> = [{Controller: AnimatedView}];
+const titleElements: Array<Items> = [{Controller: AnimatedView}];
 
 const titleAnim: [number, UseAnimationFnProps] = [
   titleElements.length,

@@ -1,7 +1,7 @@
 import {UseAnimationFnProps} from 'hooks';
 import {AnimatedText} from 'components';
 
-import {Panels} from './types';
+import {Items} from './types';
 
 const config = {duration: 200};
 
@@ -16,7 +16,7 @@ const titleToOut: UseAnimationFnProps = () => ({
   to: {opacity: 0, y: '70px'}
 });
 
-const titleElements: Array<Panels> = [{Controller: AnimatedText}];
+const titleElements: Array<Items> = [{Controller: AnimatedText}];
 
 const titleAnim: [number, UseAnimationFnProps] = [
   titleElements.length,

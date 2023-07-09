@@ -4,7 +4,7 @@ import contents from 'pages/About/meta.data';
 import {UseAnimationFnProps, UseAnimationThunkFnProps} from 'hooks';
 import {AnimatedView} from 'components';
 
-import {Panels} from './types';
+import {Items} from './types';
 
 const config = {duration: 400, easing: easings.easeOutBack};
 
@@ -24,7 +24,7 @@ const indicatorToOut: UseAnimationFnProps = (idx) => {
   return {to, config};
 };
 
-const indicatorElements: Array<Panels> = [
+const indicatorElements: Array<Items> = [
   {Controller: AnimatedView},
   {Controller: AnimatedView},
   {Controller: AnimatedView},

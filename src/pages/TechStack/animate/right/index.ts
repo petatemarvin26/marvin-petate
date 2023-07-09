@@ -1,7 +1,7 @@
 import {UseAnimationFnProps} from 'hooks';
 import {AnimatedText} from 'components';
 
-import {Panels} from './types';
+import {Items} from './types';
 import {easings} from '@react-spring/web';
 
 const config = {duration: 650, easing: easings.easeInOutBack};
@@ -17,7 +17,7 @@ const rightToOut: UseAnimationFnProps = () => ({
   to: {width: '0%', opacity: 0}
 });
 
-const rightElements: Array<Panels> = [{Controller: AnimatedText}];
+const rightElements: Array<Items> = [{Controller: AnimatedText}];
 
 const rightAnim: [number, UseAnimationFnProps] = [
   rightElements.length,

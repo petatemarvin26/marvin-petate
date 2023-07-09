@@ -3,7 +3,7 @@ import {SpringConfig} from '@react-spring/web';
 import {UseAnimationFnProps, UseAnimationThunkFnProps} from 'hooks';
 import {AnimatedText} from 'components';
 
-import {Panels} from './types';
+import {Items} from './types';
 import {contents} from 'pages/About';
 
 const config: SpringConfig = {duration: 500};
@@ -41,7 +41,7 @@ const contentToOut: UseAnimationFnProps = (idx) => {
   return {to, config};
 };
 
-const contentElements: Array<Panels> = [
+const contentElements: Array<Items> = [
   {Controller: AnimatedText},
   {Controller: AnimatedText},
   {Controller: AnimatedText},
