@@ -6,6 +6,7 @@ import ImageViewer from './ImageViewer';
 import LineGraph from './LineGraph';
 import Navbar from './Nabvar';
 import Service from './Service';
+import SmartImage from './SmartImage';
 import Tech, {Framework, TechStack} from './Tech';
 import TechDetails from './TechDetails';
 import Timeline from './Timeline';
@@ -22,6 +23,7 @@ export {
   LineGraph,
   Navbar,
   Service,
+  SmartImage,
   Tech,
   TechDetails,
   Timeline,

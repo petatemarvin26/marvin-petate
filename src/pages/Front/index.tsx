@@ -30,8 +30,8 @@ const FrontPage: React.FC = () => {
   const initRender = useRef(true);
   const ref = useRef<HTMLDivElement>();
   const [src, setSrc] = useState<string>(
-    // displayPicLowImg
-    displayPicImg
+    displayPicLowImg
+    // displayPicImg
   );
 
   const [pbLeftStyles, pbLeftStart] = useAnimation(...pbLeftAnim);
@@ -54,6 +54,10 @@ const FrontPage: React.FC = () => {
   const preRenderImageListener = () => {
     if (initRender.current) {
       initRender.current = false;
+
+      const dp = new Image();
+      dp.src = displayPicImg;
+      dp.onload = () => setSrc(dp.src);
 
       //pre-render of large image
       // preRenderImage(displayPicImg).then(setSrc)
@@ -121,7 +125,6 @@ const FrontPage: React.FC = () => {
       </Controller>
     );
   });
-
   const renderedRightProfileButtons = pbRightStyles.map((style, key) => {
     const {Controller, Icon} = pbRightElements[key];
     return (

@@ -1,10 +1,17 @@
 import {UseAnimationFnProps, UseAnimationThunkFnProps} from 'hooks';
-import {AnimatedImage} from 'components';
+import {SmartImage} from 'components';
 
 import {Items} from './types';
-import {displayPic2LowImg, displayPic3LowImg} from 'assets';
-import {easings} from '@react-spring/web';
+import {
+  displayPic2Img,
+  displayPic2LowImg,
+  displayPic3Img,
+  displayPic3LowImg
+} from 'assets';
+import {animated, easings} from '@react-spring/web';
 import contents from 'pages/About/meta.data';
+
+const AnimatedSmartImage = animated(SmartImage);
 
 const config = {duration: 250, easing: easings.easeInSine};
 
@@ -71,8 +78,16 @@ const imageToPrev: UseAnimationThunkFnProps = () => () => {
 };
 
 const imageElements: Array<Items> = [
-  {Controller: AnimatedImage},
-  {Controller: AnimatedImage}
+  {
+    Controller: AnimatedSmartImage,
+    preSrc: displayPic2LowImg,
+    src: displayPic2Img
+  },
+  {
+    Controller: AnimatedSmartImage,
+    preSrc: displayPic3LowImg,
+    src: displayPic3Img
+  }
 ];
 
 const imageAnim: [number, UseAnimationFnProps] = [

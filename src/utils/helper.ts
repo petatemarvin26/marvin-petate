@@ -1,3 +1,5 @@
+import {PreRenderedImg} from './types';
+
 const sort =
   <T>(key: keyof T) =>
   (a: any, b: any) => {
@@ -6,22 +8,10 @@ const sort =
     return 0;
   };
 
-const preRenderImage = (src: string) => {
-  return new Promise((res, rej) => {
-    const img = new Image();
-    img.src = src;
-    img.onload = function () {
-      res(src);
-    };
-    img.onerror = function () {
-      rej('Error Img');
-    };
-  });
+const preRenderImage: PreRenderedImg = (src, cb) => {
+  const img = new Image();
+  img.src = src;
+  img.onload = () => cb(img.src);
 };
 
-const preRenderImages = (srcs: Array<string>) => {
-  const images = srcs.map((src) => preRenderImage(src));
-  return Promise.all(images);
-};
-
-export {sort, preRenderImage, preRenderImages};
+export {sort, preRenderImage};

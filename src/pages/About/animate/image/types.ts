@@ -1,6 +1,7 @@
 interface Items {
   Controller: React.ElementType;
-  src?: string;
+  preSrc: string;
+  src: string;
 }
 
 export type {Items};
