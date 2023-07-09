@@ -3,4 +3,33 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+  gap: 25px;
+}
+
+.not-supported-page .top-pane {
+}
+.top-pane .gear-svg {
+  width: 45px;
+  height: 45px;
+  animation: rotateAnim 1s infinite linear;
+}
+
+.not-supported-page .center-pane {
+  align-items: center;
+  justify-content: center;
+}
+.center-pane .title-txt {
+  font-size: 22.5px;
+  font-weight: bold;
+}
+.center-pane .subtitle-txt {
+}
+
+@keyframes rotateAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
