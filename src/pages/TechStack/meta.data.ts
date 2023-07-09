@@ -27,7 +27,7 @@ const techStacks: TechStack[] = [
     Icon: svgs['AwsSvg'],
     name: 'Amazon WeFb Service',
     content:
-      "The time that I'm comfortable at my knowledge in Web APIs and Javascript I wonder how I could deploy my web application, so I went to other hosting servers like heroku, firebase, netlify and such, until I realize the most popular infrastructure, so currently I am still under go learning to their other services and features of AWS",
+      "The time that I'm comfortable on my knowledge in Web APIs and Javascript and wondering how I could deploy my web application, so I went to other hosting servers like heroku, firebase, netlify and such, until I realize the most popular infrastructure multiple services, so right now, I am still investing time to understand the other services and features of AWS",
     work_exp: 0.5,
     framework: Framework.Infra,
     graph: [

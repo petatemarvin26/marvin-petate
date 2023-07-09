@@ -13,7 +13,7 @@ const projects: Array<Project> = [
     src: rpsImg,
     name: 'Rock Paper Scissor',
     content:
-      'Is a multiplayer mobile online game, where the player should pick their battle hand within 5 seconds, the playe who will win got 5 crown points, its Tech Stack is MERN composed of MongoDB, Express and React Native, this is the first game the I made in my college, because I just want to explore being fullstack.'
+      'Is a multiplayer mobile online game, where the player should pick their battle hand within 5 seconds, the player who will win got 5 crown points, this project purposes is to give you bonding with your friends or family, its Tech Stack is MERN composed of MongoDB, Express and React Native, this is the first game the I made in my college, to check my understanding in fullstack development.'
   },
   {
     src: broowingCoffeeImg,
@@ -31,7 +31,7 @@ const projects: Array<Project> = [
     src: letsTalkImg,
     name: "Let's Talk",
     content:
-      "Is web application where you can interact to those online users who are willign to comfort if you are down, or you may also be the samaritan where you can comfort others on their problems, there some people that can't confess on their friends or family because they are shy or might shame for some reason. so that is why I built this system for those who wants to talk to someone that hey can express their problems, and this application is running on React JS, FastAPI, Websocket, and PostgreSQL"
+      "Is web application where you can interact to online users who you want to give confession or you may also be the samaritan where you can comfort others on their problems, there some people that they can't tell problems to their friends or family because they are shy or might shame for some reason. so I built this system to settle those issues regarding on problems, stress or depression especially to those people dont have much friends or closed family, this application is running on React JS, FastAPI, Websocket, and PostgreSQL"
   },
   {
     src: peryaGamesImg,

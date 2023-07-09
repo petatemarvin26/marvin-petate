@@ -3,7 +3,7 @@ run-name: 'build and deploy'
 on:
   push:
     branches:
-      - release/2.0.0
+      - prod
 jobs:
   build_and_deploy:
     name: 'build'
@@ -14,7 +14,18 @@ jobs:
           repository: ${{ github.repository }}
           token: ${{ secrets.ACC3SS_T0K3N }}
 
+      - name: setup environmemnt
+        run: |
+          - sudo apt update 
+          - sudo apt install nodejs
+          - sudo apt install npm
+          - curl -sL https://firebase.tools | bash
+
       - name: build
         run: |
           - npm install
           - npm run build
+
+      - name: deploy
+        run: |
+          - firebase deploy --token ${{ secrets.F1R3B4S3_T0K3N }} --only hosting
