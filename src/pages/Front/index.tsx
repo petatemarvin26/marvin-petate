@@ -1,7 +1,7 @@
 import {useEffect, useRef} from 'react';
 import {View} from 'vin-react';
 
-import {displayPic} from 'assets/image';
+import {displayPicImg} from 'assets/image';
 import {useAnimation, useFocus} from 'hooks';
 
 import {
@@ -92,7 +92,7 @@ const FrontPage: React.FC = () => {
         key={key}
         style={style}
         className={styles['display-pic-img']}
-        src={displayPic}
+        src={displayPicImg}
       />
     );
   });

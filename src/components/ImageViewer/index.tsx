@@ -1,13 +1,15 @@
 import {useEffect, useRef, useState} from 'react';
 import {Image, View} from 'vin-react';
 
+import projects from 'pages/Projects/meta.data';
+import {AnimatedView} from 'components';
 import {useAnimation, useFocus} from 'hooks';
 
-import {imagesAnim, imagesElements, imagesToIn, imagesToOut} from './animate';
-import {HandleClick} from './types';
+import {imagesAnim, imagesToIn, imagesToOut} from './animate';
+import {HandleClick, Props} from './types';
 import styles from './.module.css';
 
-const ImageViewer: React.FC = () => {
+const ImageViewer: React.FC<Props> = ({onChangeIndex}) => {
   const ref = useRef<HTMLDivElement>();
   const [, setIndex] = useState(0);
 
@@ -18,6 +20,7 @@ const ImageViewer: React.FC = () => {
   const handleClick: HandleClick = (key) => () => {
     setIndex(key);
     imagesStart(imagesToIn(key));
+    onChangeIndex(projects[key]);
   };
 
   const focusListener = () => {
@@ -29,16 +32,16 @@ const ImageViewer: React.FC = () => {
   useEffect(focusListener, [focus]);
 
   const renderedImages = imagesStyles.map((style, key) => {
-    const {Controller, src} = imagesElements[key];
+    const {src} = projects[key];
     return (
-      <Controller
+      <AnimatedView
         key={key}
         style={style}
         className={styles['project-pane']}
         onClick={handleClick(key)}
       >
         <Image className={styles['project-img']} src={src} draggable={false} />
-      </Controller>
+      </AnimatedView>
     );
   });
 

@@ -67,6 +67,8 @@ body #root {
   --NAVBAR-BORDER-COLOR: #1e272e;
   --NAVBAR-BG-COLOR: #1e272e;
 
+  --CONTACT-BG-COLOR: #1c1c22;
+
   --FONT-SIZE-S: 15px;
 
   --BORDER-RADIUS: 4px;
@@ -78,7 +80,13 @@ body #root {
   --SELECT-SHADOW: 0px 2px 2.5px 0.5px rgba(0, 0, 0, 0.1);
   --SELECT-SHADOW-OFF: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 
-  --MASK-GRADIENT: linear-gradient(180deg, white, white, white, rgba(0, 0, 0, 0.25))
+  --MASK-GRADIENT: linear-gradient(
+    180deg,
+    white,
+    white,
+    white,
+    rgba(0, 0, 0, 0.25)
+  );
 }
 
 *::-webkit-scrollbar-track {

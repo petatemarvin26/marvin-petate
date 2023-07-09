@@ -287,7 +287,7 @@ const techStacks: TechStack[] = [
     Icon: svgs['GraphqlSvg'],
     name: 'GraphQL',
     content:
-      'I dont have yet any project that works with GraphQL, since it was just last year when I explore and read about how good this technology is, but yes I do background reading on its documentation, and currently I enrolled some courses to know what is the best practice approach to implementing this technolgoy.',
+      'I dont have yet any project with GraphQL, it was just last year when I explore and read about how good this technology is, but yes I do background reading on its documentation, and currently I enrolled some courses to know what is the best practice approach to implementing this technolgoy.',
     work_exp: 0.25,
     framework: Framework.QL,
     colors: ['rgba(212, 1, 111, 1)', 'rgba(212, 1, 111, 0.1)'],
@@ -456,7 +456,7 @@ const techStacks: TechStack[] = [
     Icon: svgs['PostgresqlSvg'],
     name: 'Postgresql',
     content:
-      'I much like sql as the core of my system compare to other database, because you can properly organized your data structure for your system, standardize you database model and applicale on design patterns like divide and conquer and single responsiblity, which makes more efficient and well design the your system database',
+      'I much like sql compare to other database, because you can properly organized your data structure for your system, standardize you database model and applicale on design patterns like divide and conquer and single responsiblity, which makes more efficient and well design the your system database',
     work_exp: 2,
     framework: Framework.Database,
     colors: ['rgba(49, 100, 140, 1)', 'rgba(49, 100, 140, 0.1)'],

@@ -4,9 +4,9 @@
 }
 
 .projects-page .top-pane {
-  flex: 1.25;
+  flex: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .top-pane .title-txt {
@@ -16,10 +16,10 @@
 }
 
 .projects-page .center-pane {
-  flex: 3;
+  flex:3;
   align-items: center;
-  justify-content: flex-start;
-  gap: 50px;
+  justify-content: center;
+  gap: 25px;
 }
 
 .center-pane .details-pane {

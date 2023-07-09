@@ -1,7 +1,13 @@
 import {Button, Image, Text, View} from 'vin-react';
 
 import styles from './.module.css';
-import {GmailSvg, LinkedIn, TwitterSvg, engrNelvin, logo} from 'assets';
+import {
+  GmailSvg,
+  LinkedIn,
+  TwitterSvg,
+  engrNelvinLogoImg,
+  mvLogoOrig
+} from 'assets';
 import {ClickHandler} from './types';
 
 const ContactPage: React.FC = () => {
@@ -54,11 +60,11 @@ const ContactPage: React.FC = () => {
       </View>
       <View className={styles['right-pane']}>
         <View className={styles['upper-pane']}>
-          <Text className={styles['title-txt']}>Key Partners</Text>
+          <Text className={styles['title-txt']}>Companies</Text>
         </View>
         <View className={styles['image-pane']}>
-          <Image className={styles['logo-img']} src={logo} />
-          <Image className={styles['logo-img']} src={engrNelvin} />
+          <Image className={styles['logo-img']} src={mvLogoOrig} />
+          <Image className={styles['logo-img']} src={engrNelvinLogoImg} />
         </View>
       </View>
     </View>

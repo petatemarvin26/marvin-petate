@@ -1,7 +1,7 @@
 .contact-page {
   height: 25vh;
   flex-direction: row;
-  background-color: #1c1c22;
+  background-color: var(--CONTACT-BG-COLOR);
 }
 
 .contact-page .upper-pane {

@@ -1,12 +1,9 @@
-import {SpringConfig, animated, easings} from '@react-spring/web';
-import {View} from 'vin-react';
+import {SpringConfig, easings} from '@react-spring/web';
 
-import {test1, test2, test3, test4, test5, test6} from 'assets';
 import {UseAnimationFnProps, UseAnimationThunkFnProps} from 'hooks';
 
 import {Images} from './types';
-
-const AnimatedView = animated(View);
+import projects from 'pages/Projects/meta.data';
 
 const config: SpringConfig = {duration: 300, easing: easings.easeInSine};
 
@@ -35,42 +32,8 @@ const imagesToOut: UseAnimationFnProps = (idx) => {
   return {to, config};
 };
 
-const imagesElements: Array<Images> = [
-  {
-    id: 0,
-    Controller: AnimatedView,
-    src: test1
-  },
-  {
-    id: 1,
-    Controller: AnimatedView,
-    src: test2
-  },
-  {
-    id: 2,
-    Controller: AnimatedView,
-    src: test3
-  },
-  {
-    id: 3,
-    Controller: AnimatedView,
-    src: test4
-  },
-  {
-    id: 4,
-    Controller: AnimatedView,
-    src: test5
-  },
-  {
-    id: 5,
-    Controller: AnimatedView,
-    src: test6
-  }
-];
+const imagesElements: Array<Images> = [];
 
-const imagesAnim: [number, UseAnimationFnProps] = [
-  imagesElements.length,
-  imagesFrom
-];
+const imagesAnim: [number, UseAnimationFnProps] = [projects.length, imagesFrom];
 
 export {imagesElements, imagesAnim, imagesFrom, imagesToIn, imagesToOut};

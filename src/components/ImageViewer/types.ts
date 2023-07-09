@@ -1,9 +1,12 @@
+import {Project} from 'pages/Projects/types';
 import {MouseEvent} from 'react';
 
-interface Props {}
+type Props = {
+  onChangeIndex: (index: Project) => void;
+};
 
-interface HandleClick {
+type HandleClick = {
   (index: number): (event: MouseEvent<HTMLDivElement>) => void;
-}
+};
 
 export type {Props, HandleClick};

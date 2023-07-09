@@ -14,6 +14,7 @@
 
 .images-pane .project-pane {
   border: var(--BORDER);
+  /* background-color: var(--LIGHT-BLACK); */
   background-color: var(--WHITE);
   position: absolute;
 }
@@ -24,5 +25,5 @@
 .project-pane .project-img {
   width: 250px;
   height: 250px;
-  object-fit: cover;
+  object-fit: contain;
 }
