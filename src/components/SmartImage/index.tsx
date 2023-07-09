@@ -1,5 +1,5 @@
-import {memo, useEffect, useRef, useState} from 'react';
-import {Image as ImageComponent, smartCompare} from 'vin-react';
+import {useEffect, useRef, useState} from 'react';
+import {Image as ImageComponent} from 'vin-react';
 
 import styles from './.module.css';
 import {Props} from './types';
@@ -27,4 +27,3 @@ const SmartImage: React.FC<Props> = ({className, style, preSrc, src}) => {
 };
 
 export default SmartImage;
-// export default memo(SmartImage, smartCompare(['preSrc', 'src']));
