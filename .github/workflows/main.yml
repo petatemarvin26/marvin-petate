@@ -25,4 +25,5 @@ jobs:
 
       - name: deploy
         run: |
+          echo "Deploying at ${{ env.PUBLIC_URL }}"
           firebase deploy --token ${{ secrets.F1R3B4S3_T0K3N }} --only hosting
