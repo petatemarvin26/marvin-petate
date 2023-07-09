@@ -11,7 +11,7 @@
 .top-pane .gear-svg {
   width: 45px;
   height: 45px;
-  animation: rotateAnim 1s infinite linear;
+  animation: rotateAnim 2s infinite linear;
 }
 
 .not-supported-page .center-pane {
