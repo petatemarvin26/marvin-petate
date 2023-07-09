@@ -31,7 +31,7 @@ const TechDetails: React.FC<Props> = ({data}) => {
         <View className={styles['upper-pane']}>
           <Text className={styles['title-txt']}>{data?.name}</Text>
           <Text className={styles['work-exp-txt']}>
-            {work_exp} yr{work_exp > 1.99 ? 's' : ''}
+            {work_exp}yr{work_exp > 1.99 ? 's' : ''} work experience
           </Text>
         </View>
         <View className={styles['lower-pane']}>

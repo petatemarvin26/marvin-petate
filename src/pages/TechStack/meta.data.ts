@@ -428,7 +428,7 @@ const techStacks: TechStack[] = [
     name: 'Node',
     content:
       "late year 2020 I started to learn in javascript, I found Node environment that cater the server side of javascript and some new features that introduced in 2015, I search on how node works in javascript so it is just like a containerized environemnt of javascript, webapis and browser enginem, 2 yrs after I started to create my own module and deploy it in node package manager, and 'til now I love creating modules and used by other developers",
-    work_exp: 3,
+    work_exp: 2.75,
     framework: Framework.Javascript,
     colors: ['rgba(65, 135, 63, 1)', 'rgba(65, 135, 63, 0.1)'],
     graph: [
