@@ -19,7 +19,7 @@ const projects: Array<Project> = [
     src: broowingCoffeeImg,
     name: 'Broowing Coffee',
     content:
-      'Is a mobile web point of sale and inventory management with a real life design scenario, create product, include the inventory, create transaction with an e-receipt at the same time the deduction of inventory simulteneously, and yes it can also create a reports depends on what you chosen, this application runs in React JS, Expresss and MongoDB'
+      'Is a mobile web point of sale and inventory management with a real life design scenario, create product, include the inventory, create transaction with an e-receipt at the same time the deduction of inventory simulteneously, and yes it can also create a reports depends on what you chosen, this application runs in React JS, Expresss and MongoDB.'
   },
   {
     src: budgetMangrImg,
@@ -31,7 +31,7 @@ const projects: Array<Project> = [
     src: letsTalkImg,
     name: "Let's Talk",
     content:
-      "Is web application where you can interact to online users who you want to give confession or you may also be the samaritan where you can comfort others on their problems, there some people that they can't tell problems to their friends or family because they are shy or might shame for some reason. so I built this system to settle those issues regarding on problems, stress or depression especially to those people dont have much friends or closed family, this application is running on React JS, FastAPI, Websocket, and PostgreSQL"
+      "Is web application where you can interact to online users who you want to give confession or you may also be the samaritan where you can comfort others on their problems, there some people that they can't tell problems to their friends or family because they are shy or might shame for some reason. so I built this system to settle those issues regarding on problems, stress or depression especially to those people dont have much friends or closed family, this application is running on React JS, FastAPI, Websocket, and PostgreSQL."
   },
   {
     src: peryaGamesImg,
