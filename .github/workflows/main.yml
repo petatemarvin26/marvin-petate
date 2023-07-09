@@ -20,10 +20,10 @@ jobs:
       - name: build
         run: |
           npm ci
-          export PUBLIC_URL=$PUBLIC_URL
+          export PUBLIC_URL=${{ vars.PUBLIC_URL }}
           npm run build
 
       - name: deploy
         run: |
-          echo "Deploying at $PUBLIC_URL"
+          echo "Deploying at ${{ vars.PUBLIC_URL }}"
           firebase deploy --token ${{ secrets.F1R3B4S3_T0K3N }} --only hosting
