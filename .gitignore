@@ -5,7 +5,7 @@ build
 node_modules
 
 # environments
-.env*
+.env
 
 # test chunks
 test
