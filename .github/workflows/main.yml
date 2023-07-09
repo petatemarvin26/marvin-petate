@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - prod
+
+env:
+  PUBLIC_URL: ${{ secrets.D0M41N }}
+
 jobs:
   build_and_deploy:
     name: build and deploy
