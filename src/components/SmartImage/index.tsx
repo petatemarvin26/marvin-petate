@@ -1,10 +1,10 @@
+import {memo, useEffect, useRef, useState} from 'react';
 import {Image as ImageComponent, smartCompare} from 'vin-react';
 
 import styles from './.module.css';
 import {Props} from './types';
-import {memo, useEffect, useRef, useState} from 'react';
 
-const SmartImage: React.FC<Props> = ({preSrc, src}) => {
+const SmartImage: React.FC<Props> = ({className, style, preSrc, src}) => {
   const initRender = useRef(true);
   const [source, setSource] = useState(preSrc);
 
@@ -18,7 +18,13 @@ const SmartImage: React.FC<Props> = ({preSrc, src}) => {
   };
   useEffect(initListener, []);
 
-  return <ImageComponent className={styles['smart-image']} src={source} />;
+  let smartImageStyle = styles['smart-img'];
+  if (className) smartImageStyle += ` ${className}`;
+
+  return (
+    <ImageComponent className={smartImageStyle} style={style} src={source} />
+  );
 };
 
-export default memo(SmartImage, smartCompare(['preSrc', 'src']));
+export default SmartImage;
+// export default memo(SmartImage, smartCompare(['preSrc', 'src']));

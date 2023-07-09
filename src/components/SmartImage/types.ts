@@ -4,7 +4,7 @@ type Props = {
   preSrc: string;
   src: string;
   className?: string;
-  style: CSSProperties;
+  style?: CSSProperties;
 };
 
 export type {Props};

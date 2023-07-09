@@ -1,15 +1,16 @@
+import {animated, easings} from '@react-spring/web';
 import {UseAnimationFnProps, UseAnimationThunkFnProps} from 'hooks';
-import {SmartImage} from 'components';
 
-import {Items} from './types';
+import {SmartImage} from 'components';
+import contents from 'pages/About/meta.data';
 import {
   displayPic2Img,
   displayPic2LowImg,
   displayPic3Img,
   displayPic3LowImg
 } from 'assets';
-import {animated, easings} from '@react-spring/web';
-import contents from 'pages/About/meta.data';
+
+import {Items} from './types';
 
 const AnimatedSmartImage = animated(SmartImage);
 

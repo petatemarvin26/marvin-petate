@@ -1,9 +1,11 @@
-import {AnimatedImage} from 'components';
+import {SmartImage} from 'components';
 import {UseAnimationFnConfig, UseAnimationFnProps} from 'hooks';
 
-import {Image} from './types';
+import {Item} from './types';
+import {displayPicImg, displayPicLowImg} from 'assets';
+import {animated} from '@react-spring/web';
 
-const imgElements: Array<Image> = [{Controller: AnimatedImage}];
+const AnimatedSmartImage = animated(SmartImage);
 
 const config: UseAnimationFnConfig = (idx) => ({
   duration: (imgElements.length - idx) * 25 + 200
@@ -19,6 +21,10 @@ const imgToIn: UseAnimationFnProps = () => ({
 const imgToOut: UseAnimationFnProps = () => ({
   to: {opacity: 0, x: '50px'}
 });
+
+const imgElements: Array<Item> = [
+  {Controller: AnimatedSmartImage, preSrc: displayPicLowImg, src: displayPicImg}
+];
 
 const imageAnim: [number, UseAnimationFnProps] = [imgElements.length, imgFrom];
 

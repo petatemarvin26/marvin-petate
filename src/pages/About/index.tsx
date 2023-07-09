@@ -56,7 +56,15 @@ const AboutPage: React.FC = () => {
 
   const renderedImage = imageStyles.map((style, key) => {
     const {Controller, preSrc, src} = imageElements[key];
-    return <Controller key={key} style={style} preSrc={preSrc} src={src} />;
+    return (
+      <Controller
+        key={key}
+        className={styles['dp-img']}
+        style={style}
+        preSrc={preSrc}
+        src={src}
+      />
+    );
   });
 
   const renderedTitle = titleStyles.map((style, key) => {

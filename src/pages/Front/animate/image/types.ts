@@ -1,5 +1,7 @@
-interface Image {
+interface Item {
   Controller: React.ElementType;
+  preSrc: string;
+  src: string;
 }
 
-export {Image};
+export {Item};

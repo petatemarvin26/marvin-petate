@@ -1,7 +1,5 @@
-import {useEffect, useRef, useState} from 'react';
+import {useEffect, useRef} from 'react';
 import {View} from 'vin-react';
-
-import {displayPicImg, displayPicLowImg} from 'assets/image';
 import {useAnimation, useFocus} from 'hooks';
 
 import {
@@ -24,15 +22,9 @@ import {
 } from './animate';
 import styles from './.module.css';
 import {ClickHandler} from './types';
-// import {preRenderImage} from 'utils';
 
 const FrontPage: React.FC = () => {
-  const initRender = useRef(true);
   const ref = useRef<HTMLDivElement>();
-  const [src, setSrc] = useState<string>(
-    displayPicLowImg
-    // displayPicImg
-  );
 
   const [pbLeftStyles, pbLeftStart] = useAnimation(...pbLeftAnim);
   const [pbRightStyles, pbRightStart] = useAnimation(...pbRightAnim);
@@ -51,18 +43,6 @@ const FrontPage: React.FC = () => {
     window.open(link, '_blank');
   };
 
-  const preRenderImageListener = () => {
-    if (initRender.current) {
-      initRender.current = false;
-
-      const dp = new Image();
-      dp.src = displayPicImg;
-      dp.onload = () => setSrc(dp.src);
-
-      //pre-render of large image
-      // preRenderImage(displayPicImg).then(setSrc)
-    }
-  };
   const detailsFocusListener = () => {
     if (detailsFocus) {
       detailsStart(detailsToIn);
@@ -86,7 +66,6 @@ const FrontPage: React.FC = () => {
     pbLeftStart(pbLeftToOut);
     pbRightStart(pbRightToOut);
   };
-  useEffect(preRenderImageListener, []);
   useEffect(detailsFocusListener, [detailsFocus]);
   useEffect(imageFocusListener, [imageFocus]);
   useEffect(profileBtnListener, [profileBtnFocus]);
@@ -106,12 +85,13 @@ const FrontPage: React.FC = () => {
   });
 
   const renderedImg = imgsStyles.map((style, key) => {
-    const {Controller} = imgElements[key];
+    const {Controller, preSrc, src} = imgElements[key];
     return (
       <Controller
         key={key}
-        style={style}
         className={styles['display-pic-img']}
+        style={style}
+        preSrc={preSrc}
         src={src}
       />
     );
