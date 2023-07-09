@@ -1,0 +1,63 @@
+.contact-page {
+  height: 25vh;
+  flex-direction: row;
+  background-color: var(--CONTACT-BG-COLOR);
+}
+
+.contact-page .upper-pane {
+  flex: 1;
+}
+.upper-pane .title-txt {
+  color: var(--GRAY);
+}
+.contact-page .center-pane {
+  flex: 3;
+  padding-left: 10px;
+  color: var(--WHITE);
+}
+.contact-page .bottom-pane {
+  flex: 1;
+}
+
+.right-pane .image-pane {
+  flex: 3;
+  flex-direction: row;
+  gap: 10px;
+}
+.image-pane .logo-img {
+  width: 48px;
+  height: 50px;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.contact-page .contact-pane {
+  flex: 3;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 10px;
+}
+.contact-pane .contact-svg {
+  width: 25px;
+  height: 25px;
+}
+
+.contact-page .left-pane {
+  flex: 3;
+  padding: 50px 40px;
+}
+.contact-page .mid-left-pane {
+  flex: 2;
+  padding: 50px 40px;
+  /* border-left: dashed 2px rgba(141, 141, 141, 0.15); */
+}
+.contact-page .mid-right-pane {
+  flex: 2;
+  padding: 50px 40px;
+  /* border-left: dashed 2px rgba(141, 141, 141, 0.15); */
+}
+.contact-page .right-pane {
+  flex: 2;
+  padding: 50px 40px;
+  /* border-left: dashed 2px rgba(141, 141, 141, 0.15); */
+}

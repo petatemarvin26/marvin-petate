@@ -1,22 +1,11 @@
-import { createRoot } from "react-dom/client";
+import {createRoot} from 'react-dom/client';
+import App from './App';
 
-import { ClockIcon } from "assets/svg";
-import { logoImage } from "assets/images";
+const root = document.getElementById('root') as HTMLElement;
+const contaienr = createRoot(root);
 
-import styles from "./.module.css";
+if (process.env.NODE_ENV === 'production') {
+  console.log = function () {};
+}
 
-const root = document.getElementById("root");
-const container = createRoot(root);
-
-container.render(
-  <div className={styles["panel"]}>
-    <img className={styles["logo"]} src={logoImage} />
-    <ClockIcon fontSize="5vh" color="var(--WHITE)" />
-    <p id="title" className={styles["title"]}>
-      Micro Visual
-    </p>
-    <p id="subtitle" className={styles["subtitle"]}>
-      {process.env.VERSION}
-    </p>
-  </div>
-);
+contaienr.render(<App />);

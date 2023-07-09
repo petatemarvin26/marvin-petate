@@ -1,0 +1,26 @@
+name: deployment
+on:
+  push:
+    branches:
+      - prod
+jobs:
+  build_and_deploy:
+    name: build and deploy
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository }}
+          token: ${{ secrets.ACC3SS_T0K3N }}
+
+      - name: setup environmemnt
+        run: |
+          npm install -g firebase-tools
+
+      - name: build
+        run: |
+          npm cinpm run build
+
+      - name: deploy
+        run: |
+          firebase deploy --token ${{ secrets.F1R3B4S3_T0K3N }} --only hosting

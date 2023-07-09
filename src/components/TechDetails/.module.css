@@ -1,0 +1,38 @@
+.tech-details {
+  flex: 1;
+  padding: 25px;
+}
+
+.tech-details .top-pane {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.top-pane .line-graph {
+}
+
+.tech-details .center-pane {
+  flex: 1;
+}
+.center-pane .upper-pane {
+  padding: 20px 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.upper-pane .title-txt {
+  font-size: 20px;
+  font-weight: 500;
+}
+.upper-pane .work-exp-txt {
+  color: var(--GRAY);
+}
+
+.center-pane .lower-pane {
+  padding: 20px 10px;
+  overflow-y: auto;
+}
+.lower-pane .content-txt {
+  font-size: 14px;
+  word-wrap: break-word;
+  text-align: justify;
+}

@@ -1,0 +1,80 @@
+.home-nav {
+  position: relative;
+}
+
+.home-nav .version-txt {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  color: var(--VERSION-TXT-COLOR)
+}
+
+.cloud-large {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 90%;
+  left: 7.5%;
+  opacity: 0.75;
+}
+.cloud-medium {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 90%;
+  left: 17.5%;
+  opacity: 0.75;
+}
+
+.cloud-large2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 100%;
+  left: 87.5%;
+  opacity: 0.75;
+}
+.cloud-medium2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 90%;
+  left: 5%;
+  opacity: 0.75;
+}
+.cloud-small2 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 95%;
+  left: 2.5%;
+  opacity: 0.75;
+}
+
+.rocket {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 90%;
+  left: 05%;
+  transform: rotate(120deg);
+}
+
+.moon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  left: -2.5%;
+  opacity: 0.9;
+  filter: brightness(90%);
+}
+
+.laptop {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 80%;
+  left: 90%;
+  transform: rotate(60deg);
+}
