@@ -92,7 +92,6 @@ const FrontPage: React.FC = () => {
       <Controller
         key={key}
         className={styles['display-pic-img']}
-        onProgress={() => {}}
         onLoadStart={() => {
           addPercentage({id: 'dp', percent: 0});
         }}

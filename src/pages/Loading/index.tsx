@@ -11,11 +11,11 @@ import {useSpring} from '@react-spring/web';
 const Loading: React.FC<Props> = () => {
   const {totalPercentage} = useContext(LoadPercentage.Context);
   const [progressStyle, progress] = useSpring(() => ({
-    from: {width: '100%', transform: 'translateX(-100%)'}
+    from: {width: '0%'}
   }));
 
   const percentageListener = () => {
-    progress.start({to: {transform: `translateX(${totalPercentage - 100}%)`}});
+    progress.start({to: {width: `${totalPercentage}%`}});
   };
   useEffect(percentageListener, [totalPercentage]);
 
