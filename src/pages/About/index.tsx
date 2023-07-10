@@ -1,6 +1,7 @@
-import {useEffect, useRef, useState} from 'react';
+import {useContext, useEffect, useRef, useState} from 'react';
 import {Text, View} from 'vin-react';
 
+import {LoadPercentage} from 'context';
 import {useAnimation, useFocus} from 'hooks';
 import {Timeline} from 'components';
 
@@ -20,9 +21,9 @@ import {
   imageToNext
 } from './animate';
 import styles from './.module.css';
-
 const AboutPage: React.FC = () => {
   const initRender = useRef(true);
+  const {addPercentage, setPercentage} = useContext(LoadPercentage.Context);
   const ref = useRef<HTMLDivElement>();
 
   const [timelineIndex, setTimelineIndex] = useState(0);
@@ -60,6 +61,12 @@ const AboutPage: React.FC = () => {
       <Controller
         key={key}
         className={styles['dp-img']}
+        onProgress={(percent) => {
+          setPercentage({id: `dp-${key + 1}`, percent});
+        }}
+        onLoadStart={() => {
+          addPercentage({id: `dp-${key + 1}`, percent: 0});
+        }}
         style={style}
         preSrc={preSrc}
         src={src}

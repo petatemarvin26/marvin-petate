@@ -1,10 +1,11 @@
 import {CSSProperties} from 'react';
 
-type Props = {
-  preSrc: string;
-  src: string;
+interface Props {
   className?: string;
+  thumbClassName?: string;
+  progress?: number;
   style?: CSSProperties;
-};
+  thumbStyle?: CSSProperties;
+}
 
 export type {Props};

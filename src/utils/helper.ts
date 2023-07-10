@@ -1,4 +1,4 @@
-import {PreRenderedImg} from './types';
+import {GetDisplay, PreRenderedImg} from './types';
 
 const sort =
   <T>(key: keyof T) =>
@@ -14,4 +14,8 @@ const preRenderImage: PreRenderedImg = (src, cb) => {
   img.onload = () => cb(img.src);
 };
 
-export {sort, preRenderImage};
+const getDisplay: GetDisplay = (flag) => {
+  return flag ? 'flex' : 'none';
+};
+
+export {sort, preRenderImage, getDisplay};

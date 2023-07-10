@@ -1,0 +1,21 @@
+.loading {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  gap: 10px;
+}
+
+.loading .top-pane {
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+.top-pane .title-txt {
+  color: var(--LIGHT-BLACK);
+}
+
+.loading .center-pane {
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+}

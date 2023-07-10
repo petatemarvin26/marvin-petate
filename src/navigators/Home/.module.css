@@ -1,12 +1,19 @@
 .home-nav {
   position: relative;
+  background-image: url('assets/image/bg-design.png');
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+.hide {
+  display: none;
 }
 
 .home-nav .version-txt {
   position: absolute;
   left: 10px;
   bottom: 5px;
-  color: var(--VERSION-TXT-COLOR)
+  color: var(--VERSION-TXT-COLOR);
 }
 
 .cloud-large {

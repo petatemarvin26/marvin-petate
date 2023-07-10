@@ -1,6 +1,8 @@
-import {useEffect, useRef} from 'react';
+import {useContext, useEffect, useRef} from 'react';
 import {View} from 'vin-react';
+
 import {useAnimation, useFocus} from 'hooks';
+import {LoadPercentage} from 'context';
 
 import {
   detailsAnim,
@@ -25,6 +27,7 @@ import {ClickHandler} from './types';
 
 const FrontPage: React.FC = () => {
   const ref = useRef<HTMLDivElement>();
+  const {addPercentage, setPercentage} = useContext(LoadPercentage.Context);
 
   const [pbLeftStyles, pbLeftStart] = useAnimation(...pbLeftAnim);
   const [pbRightStyles, pbRightStart] = useAnimation(...pbRightAnim);
@@ -83,20 +86,23 @@ const FrontPage: React.FC = () => {
       </Controller>
     );
   });
-
   const renderedImg = imgsStyles.map((style, key) => {
-    const {Controller, preSrc, src} = imgElements[key];
+    const {Controller, src} = imgElements[key];
     return (
       <Controller
         key={key}
         className={styles['display-pic-img']}
+        onProgress={(percent) => {
+          setPercentage({id: 'dp', percent});
+        }}
+        onLoadStart={() => {
+          addPercentage({id: 'dp', percent: 0});
+        }}
         style={style}
-        preSrc={preSrc}
         src={src}
       />
     );
   });
-
   const renderedLeftProfileButtons = pbLeftStyles.map((style, key) => {
     const {Controller, Icon} = pbLeftElements[key];
     return (

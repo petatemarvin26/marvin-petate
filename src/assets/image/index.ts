@@ -1,3 +1,4 @@
+import bgDesign from './bg-design.png';
 import broowingCoffeeImg from './broowing-coffee.jpg';
 import budgetMangrImg from './budget-manager.jpg';
 import displayPicImg from './dp.png';
@@ -16,6 +17,7 @@ import portfolioImg from './portfolio.jpg';
 import rpsImg from './rps.jpg';
 
 export {
+  bgDesign,
   broowingCoffeeImg,
   budgetMangrImg,
   displayPic3LowImg,
