@@ -3,7 +3,7 @@ import {View, Image, Button} from 'vin-react';
 import {mvLogoBlack} from 'assets';
 import {useAnimation} from 'hooks';
 
-import {ClickHandler, Props} from './types';
+import {ClickLinkHandler, ClickLogoHandler, Props} from './types';
 import {
   buttonsAnim,
   buttonsElements,
@@ -16,10 +16,14 @@ import {useEffect} from 'react';
 const Navbar: React.FC<Props> = ({className, style, scroll}) => {
   const [buttonsStyles, buttonsStart] = useAnimation(...buttonsAnim);
 
-  const handleClick: ClickHandler = (key) => () => {
+  const handleClick: ClickLinkHandler = (key) => () => {
     const doc = document.querySelector(`#p-${key}`) as HTMLDivElement;
     window.scrollTo({behavior: 'smooth', top: doc.offsetTop});
     buttonsStart(buttonsToIn(key));
+  };
+
+  const handleClickLogo: ClickLogoHandler = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
   };
 
   const scrollListener = () => {
@@ -50,7 +54,9 @@ const Navbar: React.FC<Props> = ({className, style, scroll}) => {
   return (
     <View className={`${styles['nav-bar']} ${className}`} style={style}>
       <View className={styles['left-pane']}>
-        <Image className={styles['logo-img']} src={mvLogoBlack} />
+        <Button className={styles['logo-btn']} onClick={handleClickLogo}>
+          <Image className={styles['logo-img']} src={mvLogoBlack} />
+        </Button>
       </View>
       <View className={styles['right-pane']}>{renderedButtons}</View>
     </View>

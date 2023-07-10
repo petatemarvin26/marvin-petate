@@ -1,7 +1,11 @@
 import {CSSProperties} from 'react';
 
-type ClickHandler = {
+type ClickLinkHandler = {
   (key: number): () => void;
+};
+
+type ClickLogoHandler = {
+  (): void;
 };
 
 type Props = {
@@ -10,4 +14,4 @@ type Props = {
   style?: CSSProperties;
 };
 
-export type {ClickHandler, Props};
+export type {ClickLinkHandler, ClickLogoHandler, Props};
