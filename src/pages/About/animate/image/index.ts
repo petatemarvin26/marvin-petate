@@ -3,12 +3,7 @@ import {UseAnimationFnProps, UseAnimationThunkFnProps} from 'hooks';
 
 import {AnimatedImage} from 'components';
 import contents from 'pages/About/meta.data';
-import {
-  displayPic2Img,
-  displayPic2LowImg,
-  displayPic3Img,
-  displayPic3LowImg
-} from 'assets';
+import {displayPic2Img, displayPic3Img} from 'assets';
 
 import {Items} from './types';
 
@@ -79,12 +74,10 @@ const imageToPrev: UseAnimationThunkFnProps = () => () => {
 const imageElements: Array<Items> = [
   {
     Controller: AnimatedImage,
-    preSrc: displayPic2LowImg,
     src: displayPic2Img
   },
   {
     Controller: AnimatedImage,
-    preSrc: displayPic3LowImg,
     src: displayPic3Img
   }
 ];

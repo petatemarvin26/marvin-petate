@@ -1,6 +1,5 @@
 interface Items {
   Controller: React.ElementType;
-  preSrc: string;
   src: string;
 }
 

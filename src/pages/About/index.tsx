@@ -56,7 +56,7 @@ const AboutPage: React.FC = () => {
   useEffect(timelineIndexListener, [timelineIndex]);
 
   const renderedImage = imageStyles.map((style, key) => {
-    const {Controller, preSrc, src} = imageElements[key];
+    const {Controller, src} = imageElements[key];
     return (
       <Controller
         key={key}
@@ -69,7 +69,6 @@ const AboutPage: React.FC = () => {
           setPercentage({id: `dp-${key + 1}`, percent: 100});
         }}
         style={style}
-        preSrc={preSrc}
         src={src}
       />
     );
