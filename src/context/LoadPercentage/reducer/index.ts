@@ -30,9 +30,7 @@ const reducer: Reducer = (state = reducerInitState, action) => {
         return data;
       });
 
-      total_percentage = Math.floor(
-        (total_percentage / (percentages.length * 100)) * 100
-      );
+      total_percentage = Math.floor(total_percentage / 9);
 
       return {...state, total_percentage, percentages};
     }

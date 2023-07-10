@@ -14,7 +14,7 @@ const App: React.FC = () => {
     return <NotSupported />;
   }
 
-  console.log(isReady, totalPercentage, '<<');
+  console.log(totalPercentage);
 
   // const isReady = false;
   return (

@@ -93,6 +93,7 @@ const FrontPage: React.FC = () => {
         key={key}
         className={styles['display-pic-img']}
         onProgress={(percent) => {
+          console.log(percent, 'FRONT')
           setPercentage({id: 'dp', percent});
         }}
         onLoadStart={() => {
