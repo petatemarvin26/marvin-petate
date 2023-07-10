@@ -17,8 +17,8 @@ const Navbar: React.FC<Props> = ({className, style, scroll}) => {
   const [buttonsStyles, buttonsStart] = useAnimation(...buttonsAnim);
 
   const handleClick: ClickHandler = (key) => () => {
-    const doc = document.querySelector(`#p-${key}`);
-    doc.scrollIntoView({behavior: 'smooth'});
+    const doc = document.querySelector(`#p-${key}`) as HTMLDivElement;
+    window.scrollTo({behavior: 'smooth', top: doc.offsetTop});
     buttonsStart(buttonsToIn(key));
   };
 

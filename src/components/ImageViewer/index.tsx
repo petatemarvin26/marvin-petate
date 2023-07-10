@@ -1,7 +1,8 @@
-import {useEffect, useState} from 'react';
+import {useContext, useEffect, useState} from 'react';
 import {Image, View} from 'vin-react';
 
 import projects from 'pages/Projects/meta.data';
+import {LoadPercentage} from 'context';
 import {AnimatedView} from 'components';
 import {useAnimation} from 'hooks';
 
@@ -11,6 +12,7 @@ import styles from './.module.css';
 
 const ImageViewer: React.FC<Props> = ({focus, reference, onChangeIndex}) => {
   const [, setIndex] = useState(0);
+  const {addPercentage, setPercentage} = useContext(LoadPercentage.Context);
   const [imagesStyles, imagesStart] = useAnimation(...imagesAnim);
 
   const handleClick: HandleClick = (key) => () => {
@@ -36,7 +38,17 @@ const ImageViewer: React.FC<Props> = ({focus, reference, onChangeIndex}) => {
         className={styles['project-pane']}
         onClick={handleClick(key)}
       >
-        <Image className={styles['project-img']} src={src} draggable={false} />
+        <Image
+          className={styles['project-img']}
+          src={src}
+          draggable={false}
+          onProgress={(percent) => {
+            setPercentage({id: `proj-${key}`, percent});
+          }}
+          onLoadStart={() => {
+            addPercentage({id: `proj-${key}`, percent: 0});
+          }}
+        />
       </AnimatedView>
     );
   });
