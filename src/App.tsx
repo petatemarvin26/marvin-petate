@@ -8,13 +8,11 @@ import {getDisplay} from 'utils';
 
 const App: React.FC = () => {
   const screen = useScreen();
-  const {isReady, totalPercentage} = useContext(LoadPercentage.Context);
+  const {isReady} = useContext(LoadPercentage.Context);
 
   if (ScreenType.Desktop !== screen) {
     return <NotSupported />;
   }
-
-  console.log(totalPercentage);
 
   // const isReady = false;
   return (

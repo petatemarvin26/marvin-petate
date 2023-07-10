@@ -42,11 +42,12 @@ const ImageViewer: React.FC<Props> = ({focus, reference, onChangeIndex}) => {
           className={styles['project-img']}
           src={src}
           draggable={false}
-          onProgress={(percent) => {
-            setPercentage({id: `proj-${key}`, percent});
-          }}
+          onProgress={() => {}}
           onLoadStart={() => {
             addPercentage({id: `proj-${key}`, percent: 0});
+          }}
+          onLoadEnd={() => {
+            setPercentage({id: `proj-${key}`, percent: 100});
           }}
         />
       </AnimatedView>

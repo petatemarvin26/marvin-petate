@@ -61,11 +61,12 @@ const AboutPage: React.FC = () => {
       <Controller
         key={key}
         className={styles['dp-img']}
-        onProgress={(percent) => {
-          setPercentage({id: `dp-${key + 1}`, percent});
-        }}
+        onProgress={() => {}}
         onLoadStart={() => {
           addPercentage({id: `dp-${key + 1}`, percent: 0});
+        }}
+        onLoadEnd={() => {
+          setPercentage({id: `dp-${key + 1}`, percent: 100});
         }}
         style={style}
         preSrc={preSrc}

@@ -28,7 +28,9 @@ const Provider: React.FC<Props> = ({children}) => {
 
   useEffect(() => {
     if (state.total_percentage >= 100) {
-      setState(setLoadPercentage({isReady: true}));
+      setTimeout(() => {
+        setState(setLoadPercentage({isReady: true}));
+      }, 1000);
     }
   }, [state.total_percentage]);
 

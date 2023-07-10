@@ -23,17 +23,38 @@ const reducer: Reducer = (state = reducerInitState, action) => {
       let total_percentage = 0;
       const percentages = state.percentages.map((data) => {
         if (data.id === id) {
-          total_percentage += percent;
+          total_percentage += 1;
           return {id, percent};
         }
-        total_percentage += data.percent;
+        if (data.percent >= 100) {
+          total_percentage += 1;
+        }
         return data;
       });
 
-      total_percentage = Math.floor(total_percentage / 9);
+      total_percentage = Math.floor(
+        (total_percentage / state.percentages.length) * 100
+      );
 
       return {...state, total_percentage, percentages};
     }
+
+    // case SET_DATA: {
+    //   const {id, percent} = action.payload;
+    //   let total_percentage = 0;
+    //   const percentages = state.percentages.map((data) => {
+    //     if (data.id === id) {
+    //       total_percentage += percent;
+    //       return {id, percent};
+    //     }
+    //     total_percentage += data.percent;
+    //     return data;
+    //   });
+
+    //   total_percentage = Math.floor(total_percentage / 9);
+
+    //   return {...state, total_percentage, percentages};
+    // }
 
     case SET: {
       const {isReady} = action.payload;
