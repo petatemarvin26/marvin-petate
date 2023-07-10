@@ -1,22 +1,22 @@
 import {useEffect} from 'react';
+import {Text, View} from 'vin-react';
 
 import {useAnimation, useScroll} from 'hooks';
-// import {RocketSvg} from 'assets';
+
 import {
   AboutPage,
   FrontPage,
   ProjectsPage,
   ServicesPage,
   TechStackPage,
-  ContactPage,
-  LoadingPage
+  ContactPage
 } from 'pages';
 
 import {navbarAnim, navbarElements, navbarToIn, navbarToOut} from './animation';
+import {Props} from './types';
 import styles from './.module.css';
-import {Text, View} from 'vin-react';
 
-const HomeNavigator: React.FC = () => {
+const HomeNavigator: React.FC<Props> = ({display}) => {
   const [scroll] = useScroll();
   const [navbarStyle, navbarStart] = useAnimation(...navbarAnim);
 
@@ -41,10 +41,8 @@ const HomeNavigator: React.FC = () => {
     );
   });
 
-  return <LoadingPage />;
-
   return (
-    <View className={styles['home-nav']}>
+    <View className={styles['home-nav']} style={{display}}>
       {renderedNavbar}
       <FrontPage />
       <AboutPage />

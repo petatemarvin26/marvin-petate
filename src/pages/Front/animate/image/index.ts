@@ -1,8 +1,8 @@
 import {AnimatedImage} from 'components';
 import {UseAnimationFnConfig, UseAnimationFnProps} from 'hooks';
+import {displayPicImg} from 'assets';
 
 import {Item} from './types';
-import {displayPicImg, displayPicLowImg} from 'assets';
 
 const config: UseAnimationFnConfig = (idx) => ({
   duration: (imgElements.length - idx) * 25 + 200
@@ -20,7 +20,7 @@ const imgToOut: UseAnimationFnProps = () => ({
 });
 
 const imgElements: Array<Item> = [
-  {Controller: AnimatedImage, preSrc: displayPicLowImg, src: displayPicImg}
+  {Controller: AnimatedImage, src: displayPicImg}
 ];
 
 const imageAnim: [number, UseAnimationFnProps] = [imgElements.length, imgFrom];

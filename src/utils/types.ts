@@ -6,4 +6,8 @@ type PreRenderedImg = {
   (url: string, cb: RenderedImgCallback): void;
 };
 
-export type {PreRenderedImg, RenderedImgCallback};
+type GetDisplay = {
+  (flag: boolean): 'flex' | 'none';
+};
+
+export type {PreRenderedImg, RenderedImgCallback, GetDisplay};
