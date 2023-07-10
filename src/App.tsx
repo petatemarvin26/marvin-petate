@@ -1,6 +1,6 @@
-// import {useContext} from 'react';
+import {useContext} from 'react';
 
-// import {LoadPercentage} from 'context';
+import {LoadPercentage} from 'context';
 import {HomeNavigator, LoadingNavigator} from 'navigators';
 import {useScreen, ScreenType} from 'hooks';
 import {NotSupported} from 'pages';
@@ -8,14 +8,13 @@ import {getDisplay} from 'utils';
 
 const App: React.FC = () => {
   const screen = useScreen();
-  // const {isReady} = useContext(LoadPercentage.Context);
+  const {isReady} = useContext(LoadPercentage.Context);
 
   if (ScreenType.Desktop !== screen) {
     return <NotSupported />;
   }
 
-  const isReady = false;
-
+  // const isReady = false;
   return (
     <>
       <LoadingNavigator display={getDisplay(!isReady)} />
