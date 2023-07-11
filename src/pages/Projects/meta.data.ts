@@ -13,7 +13,7 @@ const projects: Array<Project> = [
     src: rpsImg,
     name: 'Rock Paper Scissor',
     content:
-      'Is a multiplayer mobile online game, where the player should pick their battle hand within 5 seconds, the player who will win got 5 crown points, this purpose of this project is to make you bonding with your friends or family, its Tech Stack is MERN composed of MongoDB, Express, React Native and Node JS, this is the first game the I made in my college just for fun and make myself known about fullstack environment.'
+      'Is a multiplayer mobile online game, where the player should pick their battle hand within 5 seconds, the player who will win got 5 crown points, this purpose of this project is to make you bonding with your friends or family, its Tech Stack is MERN composed of MongoDB, Express, React Native and Node JS, this is the first game that I made in my college just for fun and make myself known about fullstack environment.'
   },
   {
     src: broowingCoffeeImg,
