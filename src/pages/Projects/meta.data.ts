@@ -43,7 +43,7 @@ const projects: Array<Project> = [
     src: myBusiness,
     name: 'My Business',
     content:
-      'Is a mobile web application where you can manage your business by providing your expenses, capital, price of your product or services, and generates a monthly report, this application has a feature of creating your own team that you can assign to specific departmenton your businesses, with a payroll service, this application is not in released yet and still in the development, this application tech stack are playing with React JS, FastAPI, Websocket, Postgresql, and MongoDB.'
+      'Is a mobile web application where you can manage your business by providing your expenses, capital, price of your product or services, and generates a monthly report, this application has a feature of creating your own team that you can assign to specific department on your businesses, with a payroll service, this application is not in released yet and still in the development, this application tech stack are playing with React JS, FastAPI, Websocket, Postgresql, and MongoDB.'
   }
 ];
 
