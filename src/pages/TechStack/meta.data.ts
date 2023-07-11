@@ -512,6 +512,26 @@ const techStacks: TechStack[] = [
     ]
   },
   {
+    id: 12,
+    Icon: svgs['ElectronSvg'],
+    name: 'Electron JS',
+    content:
+      'Currently I am still diving to this framework theoretically, I made some basic application for testing its features and exploring its functionalities and capabilities, if I do have project that related to desktop system I take that opportunity to explore and learned about this framework.',
+    work_exp: 0.25,
+    framework: Framework.Animation,
+    colors: ['rgba(77, 216, 255, 1)', 'rgba(77, 216, 255, 0.1)'],
+    graph: [
+      {date: new Date(2016, 0, 0), value: 0},
+      {date: new Date(2017, 0, 0), value: 0},
+      {date: new Date(2018, 0, 0), value: 0},
+      {date: new Date(2019, 0, 0), value: 0},
+      {date: new Date(2020, 0, 0), value: 25},
+      {date: new Date(2021, 0, 0), value: 2},
+      {date: new Date(2022, 0, 0), value: 15},
+      {date: new Date(2023, 0, 0), value: 25}
+    ]
+  },
+  {
     id: 9.1,
     Icon: svgs['ReactNativeSvg'],
     name: 'React Native',
@@ -554,7 +574,7 @@ const techStacks: TechStack[] = [
   {
     id: 11,
     Icon: svgs['ReduxSagaSvg'],
-    name: 'React Saga',
+    name: 'Redux Saga',
     content:
       'I encountered redux saga during the worst case in promises, but before I went here, I start with redux thunk, which absolutely not good enough to clean your api calls inside, so redux introduced its side effects middleware which is saga, who keep looking on the action if changed, the saga will dispatch as well, it is a fieldly utility tools wherein you can design your side effects without nesting api calls in action creators.',
     work_exp: 2,

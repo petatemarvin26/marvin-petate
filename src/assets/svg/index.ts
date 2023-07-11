@@ -10,6 +10,7 @@ import {ReactComponent as CssSvg} from './css.svg';
 import {ReactComponent as CustomSvg} from './custom.svg';
 import {ReactComponent as D3Svg} from './d3.svg';
 import {ReactComponent as DockerSvg} from './docker.svg';
+import {ReactComponent as ElectronSvg} from './electron.svg';
 import {ReactComponent as ExpressSvg} from './express.svg';
 import {ReactComponent as FastApiSvg} from './fastapi.svg';
 import {ReactComponent as FirebaseSvg} from './firebase.svg';
@@ -68,6 +69,7 @@ export {
   CustomSvg,
   D3Svg,
   DockerSvg,
+  ElectronSvg,
   ExpressSvg,
   FastApiSvg,
   FirebaseSvg,
