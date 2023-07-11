@@ -73,7 +73,8 @@
   gap: 20px;
 }
 .dev-account-pane .svg {
-  font-size: 20px;
+  width: 20px;
+  height: 20px;
   padding: 10px;
   border-radius: var(--BORDER-RADIUS);
   border: var(--BORDER);

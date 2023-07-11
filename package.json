@@ -1,6 +1,6 @@
 {
   "name": "marvin-petate",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "This static website contains information of 2022-2023",
   "private": true,
   "scripts": {
