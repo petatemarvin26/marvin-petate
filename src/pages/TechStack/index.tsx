@@ -123,14 +123,14 @@ const TechStackPage: React.FC = () => {
       }}
       className={styles['techstack-page']}
     >
-      <View className={styles['top-pane']}>{renderedTitle}</View>
-      <View className={styles['center-pane']}>
-        <View id='content-pane' className={styles['content-pane']}>
+      <View id='content-pane' className={styles['content-pane']}>
+        <View className={styles['left-pane']}>
+          {renderedTitle}
           <View
             reference={(ref) => {
               leftRef.current = ref;
             }}
-            className={styles['left-pane']}
+            className={styles['techstack-list-pane']}
           >
             <View
               reference={(_ref) => {
@@ -141,8 +141,8 @@ const TechStackPage: React.FC = () => {
               {remderedTechStack}
             </View>
           </View>
-          {renderedRightPane}
         </View>
+        {renderedRightPane}
       </View>
     </View>
   );

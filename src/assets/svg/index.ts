@@ -25,6 +25,7 @@ import {ReactComponent as GraphqlSvg} from './graphql.svg';
 import {ReactComponent as HtmlSvg} from './html.svg';
 import {ReactComponent as JavaSvg} from './java.svg';
 import {ReactComponent as JavascriptSvg} from './javascript.svg';
+import {ReactComponent as JestSvg} from './jest.svg';
 import {ReactComponent as LaptopSvg} from './laptop.svg';
 import {ReactComponent as LeftArrow} from './left-arrow.svg';
 import {ReactComponent as LessSvg} from './less.svg';
@@ -82,6 +83,7 @@ export {
   HtmlSvg,
   JavaSvg,
   JavascriptSvg,
+  JestSvg,
   LaptopSvg,
   LeftArrow,
   LessSvg,

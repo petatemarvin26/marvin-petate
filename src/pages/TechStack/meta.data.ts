@@ -731,6 +731,26 @@ const techStacks: TechStack[] = [
       {date: new Date(2022, 0, 0), value: 25},
       {date: new Date(2023, 0, 0), value: 50}
     ]
+  },
+  {
+    id: 16.2,
+    Icon: svgs['JestSvg'],
+    name: 'Jest JS',
+    content:
+      "While writing a script for the automation, I try to put some test script inside most of the time, I used jest as my testing library but honestly I don't have solid foundation in terms of best practices and other testing cases but for me it can absorb once I work with testing libraries, maybe soon I will get in touch to this library again.",
+    work_exp: 0.5,
+    framework: Framework.Javascript,
+    colors: ['rgba(153, 66, 91, 1)', 'rgba(153, 66, 91, 0.1)'],
+    graph: [
+      {date: new Date(2016, 0, 0), value: 0},
+      {date: new Date(2017, 0, 0), value: 10},
+      {date: new Date(2018, 0, 0), value: 10},
+      {date: new Date(2019, 0, 0), value: 2},
+      {date: new Date(2020, 0, 0), value: 10},
+      {date: new Date(2021, 0, 0), value: 5},
+      {date: new Date(2022, 0, 0), value: 15},
+      {date: new Date(2023, 0, 0), value: 10}
+    ]
   }
 ];
 

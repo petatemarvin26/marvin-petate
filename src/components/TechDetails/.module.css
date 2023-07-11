@@ -28,11 +28,21 @@
 }
 
 .center-pane .lower-pane {
-  padding: 20px 10px;
+  height: 200px;
+  padding: 0px 10px;
   overflow-y: auto;
+}
+.center-pane .lower-pane::-webkit-scrollbar-track {
+  background-color: var(--DIRTY-WHITE);
+}
+.center-pane .lower-pane::-webkit-scrollbar-thumb {
+  background-color: var(--DIRTIEST-WHITE);
+}
+.center-pane .lower-pane::-webkit-scrollbar {
+  width: 2.5px;
 }
 .lower-pane .content-txt {
   font-size: 14px;
   word-wrap: break-word;
-  text-align: justify;
+  text-align: left;
 }
