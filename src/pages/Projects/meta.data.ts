@@ -25,13 +25,13 @@ const projects: Array<Project> = [
     src: budgetMangrImg,
     name: 'Budget Manager',
     content:
-      'Is a mobile web application that helps you to manage your budget plan, wherein you can add papers and enter your budget, and one of the capabilities is you can add your expense anytime that automatically deducted to your budget, you can visualize the remaining of your budget and your total expenses, the system is composed by React JS, Python Flask and PostgreSQL.'
+      'Is a mobile web application that helps you to manage your budget plans, where you can put your estimated capital for the budget and by adding expenses it creates a log and computation in the system, the system is powered by React JS, Python Flask and PostgreSQL.'
   },
   {
     src: letsTalkImg,
     name: "Let's Talk",
     content:
-      "Is web application where you can interact to online users who you want to confess with or you may also be the samaritan where you can comfort others on their problems, there some people that they can't tell problems to their friends or family because they are shy or might shame for some reason. so I built this system to settle those issues regarding on problems, stress or depression especially to those people dont have much friends or closed family, this application is running on React JS, FastAPI, Websocket, and PostgreSQL."
+      'Is web application where you can interact to other online users who you want to confess with or you may also be the samaritan where you can comfort others on their problems, the goal is to make unfortunate users to feel free to confess there problems and issues in life without knowing their real personality, this application address your stress and depression in your life, this application is running on React JS, FastAPI, Websocket, and PostgreSQL.'
   },
   {
     src: peryaGamesImg,
@@ -43,7 +43,7 @@ const projects: Array<Project> = [
     src: myBusiness,
     name: 'My Business',
     content:
-      'Is a mobile web application where you can manage your business by providing your expenses, capital, price of your product or services, and generates a monthly report, this application has a feature of creating your team that you want to assign on your businesses and the application provides payroll for your worker depends on how you customize their payroll if per hours or per finished work, this is not yet finished that goods for the endusers and still working on it and this application tech stack are playing with React JS, FastAPI, Websocket, Postgresql, and MongoDB.'
+      'Is a mobile web application where you can manage your business by providing your expenses, capital, price of your product or services, and generates a monthly report, this application has a feature of creating your own team that you can assign to specific departmenton your businesses, with a payroll service, this application is not in released yet and still in the development, this application tech stack are playing with React JS, FastAPI, Websocket, Postgresql, and MongoDB.'
   }
 ];
 
