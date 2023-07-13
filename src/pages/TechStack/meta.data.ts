@@ -763,8 +763,8 @@ const techStacks: TechStack[] = [
     colors: ['rgba(153, 66, 91, 1)', 'rgba(153, 66, 91, 0.1)'],
     graph: [
       {date: new Date(2016, 0, 0), value: 0},
-      {date: new Date(2017, 0, 0), value: 10},
-      {date: new Date(2018, 0, 0), value: 10},
+      {date: new Date(2017, 0, 0), value: 0},
+      {date: new Date(2018, 0, 0), value: 0},
       {date: new Date(2019, 0, 0), value: 2},
       {date: new Date(2020, 0, 0), value: 10},
       {date: new Date(2021, 0, 0), value: 5},
