@@ -19,7 +19,7 @@ const projects: Array<Project> = [
     src: broowingCoffeeImg,
     name: 'Broowing Coffee',
     content:
-      'Is a mobile web point of sale and inventory management with a real life design scenario, create product, include the inventory, create transaction with an e-receipt at the same time the deduction of inventory simulteneously, and yes it can also create a reports depends on what you chosen, this application runs in React JS, Expresss, NodeJS and MongoDB.'
+      'Is a mobile web point of sale and inventory management with a real life design scenario, create product, include the inventory, create transaction with an e-receipt at the same time the deduction of inventory simultaneously, and yes it can also create a reports depends on what you chosen, this application runs in React JS, Expresss, NodeJS and MongoDB.'
   },
   {
     src: budgetMangrImg,
