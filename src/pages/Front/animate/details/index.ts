@@ -1,4 +1,4 @@
-import {AnimatedButton, AnimatedText} from 'components';
+import {AnimatedButton, AnimatedText, AnimatedHeadText} from 'components';
 import {UseAnimationFnConfig, UseAnimationFnProps} from 'hooks';
 
 import {Details} from './types';
@@ -25,7 +25,7 @@ const detailsElements: Array<Details> = [
     content: "HI I'M"
   },
   {
-    Controller: AnimatedText,
+    Controller: AnimatedHeadText,
     className: 'name',
     content: 'MARVIN PETATE'
   },

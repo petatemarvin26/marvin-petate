@@ -1,6 +1,6 @@
 {
   "name": "marvin-petate",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "This static website contains information of 2022-2023",
   "private": true,
   "scripts": {
@@ -28,8 +28,7 @@
     "@react-spring/web": "^9.7.2",
     "d3": "^7.8.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "vin-react": "^0.1.15"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",
