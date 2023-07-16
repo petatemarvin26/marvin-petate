@@ -19,7 +19,7 @@ const projects: Array<Project> = [
     src: broowingCoffeeImg,
     name: 'Broowing Coffee',
     content:
-      'Is a mobile web point of sale and inventory management with a real life design scenario, create product, include the inventory, create transaction with an e-receipt at the same time the deduction of inventory simultaneously, and yes it can also create a reports depends on what you chosen, this application runs in React JS, Expresss, NodeJS and MongoDB.'
+      'Is a mobile web point of sale and inventory management with a real life design scenario, create product, include the inventory, create transaction with an e-receipt at the same time the deduction of inventory simultaneously, and yes it can also create reports depends on what you specified date, this application runs in React JS, Expresss, NodeJS and MongoDB.'
   },
   {
     src: budgetMangrImg,
@@ -31,7 +31,7 @@ const projects: Array<Project> = [
     src: letsTalkImg,
     name: "Let's Talk",
     content:
-      'Is web application where you can interact to other online users who you want to confess with or you may also be the samaritan where you can comfort others on their problems, the goal is to make unfortunate users to feel free to confess there problems and issues in life without knowing their real personality, this application address your stress and depression in your life, this application is running on React JS, FastAPI, Websocket, and PostgreSQL.'
+      'Is web application where you can interact to other online users who you want to confess with or you may also be the samaritan where you can comfort others on their problems, the goal is to make unfortunate users to feel free to confess there problems and issues in life without knowing their real personality, this application is running on React JS, FastAPI, Websocket, and PostgreSQL.'
   },
   {
     src: peryaGamesImg,
