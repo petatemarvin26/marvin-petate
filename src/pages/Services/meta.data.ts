@@ -11,7 +11,7 @@ const services = [
     Icon: AppSvg,
     title: 'Software Development',
     content:
-      'I pursue myself to learn about new up coming technologies that trending on our dev community that gives me more knowledge on my specialize field as being frontend developer. It is a great opportunity to be part of the corporate team, collaborate with colleagues and provide a service for the company to earn more experiences .'
+      'I pursue myself to learn about new up coming technologies that trending on our dev community that gives me more knowledge on my specialize field as being frontend developer. It is a great opportunity to be part of the corporate team, collaborate with colleagues and provide a service for the company to earn more experiences.'
   },
   {
     Icon: PeopleSvg,
