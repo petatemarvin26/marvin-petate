@@ -38,14 +38,14 @@
   overflow-y: auto;
   overflow-x: hidden;
 }
-.timeline .content-pane::-webkit-scrollbar-track {
-  background-color: var(--BLACK);
-}
 .timeline .content-pane::-webkit-scrollbar-thumb {
-  background-color: var(--BLACK);
+  background: rgba(0, 0, 0, 0.1);
+}
+.timeline .content-pane::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
 }
 .timeline .content-pane::-webkit-scrollbar {
-  width: 0px !important;
+  width: 2px;
 }
 
 .content-pane .data-pane {
@@ -57,6 +57,7 @@
   word-wrap: break-word;
   text-align: center;
   word-spacing: 2px;
+  padding: 0 25px;
 }
 
 .timeline .indicator-pane {
@@ -65,9 +66,8 @@
 }
 
 .indicator-pane .indicator {
-  border-radius: 5px;
-  height: 3px;
+  border-radius: 2.5px;
+  height: 5px;
   width: 25px;
-  border: var(--BORDER-STRONG);
   background-color: var(--DIRTIEST-WHITE);
 }

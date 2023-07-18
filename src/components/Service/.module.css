@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  mask-image: var(--MASK-GRADIENT);
   -webkit-mask-image: var(--MASK-GRADIENT);
 }
 
@@ -56,11 +57,13 @@
   overflow-y: hidden;
 }
 .center-pane .content-pane::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
 }
 .center-pane .content-pane::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
 }
 .center-pane .content-pane::-webkit-scrollbar {
-  width: 0px;
+  width: 2px;
 }
 
 .content-pane .content-txt {
