@@ -436,10 +436,10 @@ const techStacks: TechStack[] = [
       {date: new Date(2017, 0, 0), value: 0},
       {date: new Date(2018, 0, 0), value: 0},
       {date: new Date(2019, 0, 0), value: 15},
-      {date: new Date(2020, 0, 0), value: 25},
-      {date: new Date(2021, 0, 0), value: 50},
-      {date: new Date(2022, 0, 0), value: 75},
-      {date: new Date(2023, 0, 0), value: 50}
+      {date: new Date(2020, 0, 0), value: 20},
+      {date: new Date(2021, 0, 0), value: 25},
+      {date: new Date(2022, 0, 0), value: 20},
+      {date: new Date(2023, 0, 0), value: 15}
     ]
   },
   // {
