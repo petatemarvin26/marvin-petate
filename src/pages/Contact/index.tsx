@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
       </View>
       <View className={styles['right-pane']}>
         <View className={styles['upper-pane']}>
-          <Text className={styles['title-txt']}>Companies</Text>
+          <Text className={styles['title-txt']}>Associate</Text>
         </View>
         <View className={styles['image-pane']}>
           <Image className={styles['logo-img']} src={mvLogoOrig} />
