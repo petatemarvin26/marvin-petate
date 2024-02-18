@@ -32,7 +32,7 @@ const detailsElements: Array<Details> = [
   {
     Controller: AnimatedText,
     className: 'title',
-    content: 'FRONTEND DEV | SOFTWARE ENGR'
+    content: 'SOFTWARE ENGR | FRONTEND DEV'
   },
   {
     Controller: AnimatedButton,

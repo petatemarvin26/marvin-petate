@@ -14,6 +14,7 @@ interface UseAnimationStyle {
   scale?: string | number;
   size?: string;
   opacity?: number;
+  zIndex?: number;
   width?: string;
   height?: string;
   display?: string;

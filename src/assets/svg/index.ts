@@ -9,6 +9,7 @@ import {ReactComponent as CloudSvg} from './cloud.svg';
 import {ReactComponent as CssSvg} from './css.svg';
 import {ReactComponent as CustomSvg} from './custom.svg';
 import {ReactComponent as D3Svg} from './d3.svg';
+import {ReactComponent as DjangoSvg} from './django.svg';
 import {ReactComponent as DockerSvg} from './docker.svg';
 import {ReactComponent as ElectronSvg} from './electron.svg';
 import {ReactComponent as ExpressSvg} from './express.svg';
@@ -27,6 +28,7 @@ import {ReactComponent as HtmlSvg} from './html.svg';
 import {ReactComponent as JavaSvg} from './java.svg';
 import {ReactComponent as JavascriptSvg} from './javascript.svg';
 import {ReactComponent as JestSvg} from './jest.svg';
+import {ReactComponent as KubernetesSvg} from './kubernetes.svg';
 import {ReactComponent as LaptopSvg} from './laptop.svg';
 import {ReactComponent as LeftArrow} from './left-arrow.svg';
 import {ReactComponent as LessSvg} from './less.svg';
@@ -68,6 +70,7 @@ export {
   CssSvg,
   CustomSvg,
   D3Svg,
+  DjangoSvg,
   DockerSvg,
   ElectronSvg,
   ExpressSvg,
@@ -86,6 +89,7 @@ export {
   JavaSvg,
   JavascriptSvg,
   JestSvg,
+  KubernetesSvg,
   LaptopSvg,
   LeftArrow,
   LessSvg,

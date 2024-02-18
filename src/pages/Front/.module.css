@@ -31,13 +31,14 @@
   font-size: 70px;
   font-weight: bold;
   line-height: 110%;
+  letter-spacing: 1px;
   color: var(--TITLE-COLOR);
 }
 .details-pane .title {
   font-size: 17.5px;
   font-weight: 500;
   text-align: right;
-  letter-spacing: 9.25px;
+  letter-spacing: 8.5px;
   color: var(--TITLE-COLOR);
 }
 .details-pane .about-btn {
