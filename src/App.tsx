@@ -1,7 +1,7 @@
-import {useContext} from 'react';
+import {useContext, Fragment} from 'react';
 
 import {LoadPercentage} from 'context';
-import {HomeNavigator, LoadingNavigator} from 'navigators';
+import {HomeNavigator} from 'navigators';
 import {useScreen, ScreenType} from 'hooks';
 import {NotSupported} from 'pages';
 import {getDisplay} from 'utils';
@@ -16,10 +16,10 @@ const App: React.FC = () => {
 
   // const isReady = false;
   return (
-    <>
-      <LoadingNavigator display={getDisplay(!isReady)} />
+    <Fragment>
+      {/* <LoadingNavigator display={getDisplay(!isReady)} /> */}
       <HomeNavigator display={getDisplay(isReady)} />
-    </>
+    </Fragment>
   );
 };
 
